@@ -271,7 +271,7 @@ h6 {
     top: 15px;
 }
 
-@media (max-width: 9px) {
+@media (max-width: 991px) {
     .mobile-nav-toggle {
         display: block;
     }

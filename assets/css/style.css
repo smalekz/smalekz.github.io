@@ -373,7 +373,7 @@ section .container {
     line-height: 1px;
     margin: 0 0 50px 0;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #aaaaaa;
     font-family: "Poppins", sans-serif;
 }
@@ -392,7 +392,7 @@ section .container {
     margin: -15px 0 15px 0;
     font-size: 14px;
     font-weight: 100;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: "Poppins", sans-serif;
     color: #fff;
 }
@@ -487,7 +487,7 @@ section .container {
 .skills .progress .skill {
     padding: 10px 0;
     margin: 0;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
@@ -638,7 +638,7 @@ section .container {
     line-height: 18px;
     font-size: 18px;
     font-weight: 600;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: "Poppins", sans-serif;
     color: #18d26e;
     margin-bottom: 10px;
@@ -780,7 +780,7 @@ section .container {
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #fff;
     background: rgba(255, 255, 255, 0.1);
     margin: 0 3px 10px 3px;
@@ -871,7 +871,7 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-info p {
     color: #ffffff;
     font-size: 14px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     padding: 0;
     margin: 0;
 }

@@ -9,7 +9,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #ff9c00;
-    color: #00ff3f;
+    color: #ffffff;
     position: relative;
 }
 
@@ -35,7 +35,7 @@ body::before {
 }
 
 a {
-    color: #000000;
+    color: yellow;
     text-decoration: none;
 }
 
@@ -51,6 +51,9 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
+    color: orange;
+    font-weight: 1000;
+    margin-bottom: 30px;
 }
 
 /* --------------------------------------------------------------
@@ -64,6 +67,7 @@ h6 {
     align-items: center;
     z-index: 997;
     overflow-y: auto;
+    background: rgb(0,0,0,0.8);
 }
 
 #header * {
@@ -109,7 +113,7 @@ h6 {
 }
 
 #header .social-links a {
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,7 +371,7 @@ section .container {
     font-weight: 500;
     padding: 0;
     line-height: 1px;
-    margin: 0 0 20px 0;
+    margin: 0 0 50px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #aaaaaa;
@@ -386,8 +390,8 @@ section .container {
 .section-title p {
     margin: 0;
     margin: -15px 0 15px 0;
-    font-size: 36px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 100;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: #fff;
@@ -399,7 +403,7 @@ section .container {
 .about-me .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #18d26e;
+    color: #ffffff;
 }
 
 .about-me .content ul {

@@ -1,8 +1,8 @@
 /* *
 * Template Name: Personal - v4.0.1
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/ */
+* Template URL: https://github.com/smalekz/smalekz.github.io
+* Author: Saber Malekzadeh
+* License: smalek.ml
 /* --------------------------------------------------------------
 # General
 -------------------------------------------------------------- */
@@ -105,6 +105,7 @@ h6 {
 #header img {
     padding: 0;
     margin: 0;
+    max-width: 150px;
 }
 
 #header .social-links {
@@ -162,12 +163,12 @@ h6 {
 }
 
 #header.header-top .social-links,
-#header.header-top h2 {
+#header.header-top h2, #header.header-top img {
     display: none;
 }
 
 #header.header-top h1 {
-    margin-right: auto;
+    /* margin-right: auto; */
     font-size: 36px;
 }
 

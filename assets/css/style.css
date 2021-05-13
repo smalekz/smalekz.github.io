@@ -168,7 +168,7 @@ h6 {
 }
 
 #header.header-top h1 {
-    /* margin-right: auto; */
+    margin-right: auto;
     font-size: 36px;
 }
 
@@ -179,6 +179,7 @@ h6 {
 
 #header.header-top .navbar {
     margin: 0;
+    margin-left: auto;
 }
 
 @media (max-width: 768px) {

@@ -35,7 +35,7 @@ body::before {
 }
 
 a {
-    color: yellow;
+    color: #fa0;
     text-decoration: none;
 }
 
@@ -51,9 +51,9 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
-    color: orange;
+    color: #77f;
     font-weight: 1000;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
 }
 
 /* --------------------------------------------------------------
@@ -244,7 +244,7 @@ h6 {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #18d26e;
+    background-color: #77f;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -385,7 +385,7 @@ section .container {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #4ceb95;
+    background: #77f;
     margin: 4px 10px;
 }
 
@@ -426,7 +426,7 @@ section .container {
 .about-me .content ul i {
     font-size: 16px;
     margin-right: 5px;
-    color: #18d26e;
+    color: #77f;
     line-height: 0;
 }
 
@@ -509,7 +509,7 @@ section .container {
     width: 1px;
     height: 10px;
     transition: .9s;
-    background-color: #18d26e;
+    background-color: #44f;
 }
 
 /* --------------------------------------------------------------
@@ -1001,7 +1001,7 @@ section .container {
 
 .contact .info-box i.bx {
     font-size: 24px;
-    color: #18d26e;
+    color: #88f;
     border-radius: 50%;
     padding: 14px;
     float: left;

@@ -1,0 +1,615 @@
+/*============================================
+
+[Table of content]
+
+1. Extra large container size
+2. Large devices (less than 1220px)
+3. Large tablets (less than  992px)
+4. Medium devices (less than  768px)
+5. Small devices (less than  576px)
+
+============================================*/
+
+
+/* 1. Extra large container size */
+@media (min-width: 1220px) {
+    .container {
+        max-width: 1200px; /* For 1200px container width, content will be 1170px wide */
+    }
+}
+@media (max-width: 1219.98px) {
+    .sidebar-social-icons li + li {
+        margin-left: 15px;
+    }
+}
+
+/* 2. Large devices (less than 1200px) */
+@media (max-width: 1199.98px) {
+    .header-menu > ul > li + li {
+        margin-left: 5px; 
+    }
+	.register-button a {
+        padding: 8.5px 0;
+        display: block;
+    }
+    .home-slider-next span{
+        left: 6px;
+        color: #1B435D;
+    }
+    .home-slider-next span i {
+        margin-left: 0;
+    }
+    .home-slider-prev span {
+        right: 6px;
+        color: #1B435D;
+    }
+    .home-slider-prev span i {
+        margin-right: 3px;
+    }
+    .vps-pricing-feature h4{
+        margin-bottom: 3px;
+    }
+    .vps-pricing-feature p {
+        font-size: 12px;
+    }
+    .single-ch-plan ul li {
+        line-height: 17px;
+    }
+    .single-feature h3 {
+        font-size: 14px;
+    }
+    .single-latest-news h2 a {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .home-review-slider p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .assistant-title span {
+        font-size: 18px;
+    }
+    .footer-social-icons li:not(:last-child) {
+        margin-right: 1px;
+    }
+    .single-footer form input {
+        height: 40px;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    .single-footer button {
+        top: 10px;
+        right: 10px;
+    }
+    .member-hover p {
+        line-height: 18px;
+    }
+    .single-sidebar-content,
+    .single-sidebar h2 {
+        padding: 20px;
+    }
+    .sidebar-social-icons li + li {
+        margin-left: 5px;
+    }
+    .related-post .single-popular-post h3 {
+        font-size: 13px;
+    }
+    .domain-names ul ul li:nth-child(1) {
+        padding-left: 0;
+        max-width: 238px;
+    }
+    .domain-names ul ul li:nth-child(2) {
+        padding-right: 10px;
+        width: 130px;
+        font-size: 30px;
+    }
+}
+
+/* 3. Large tablets (less than  992px) */
+@media (max-width: 991.98px) {
+	.sticking {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+    .sticking .header-menu > ul > li.active > a {
+        background: transparent;
+        color: #7FC3EC;
+    }
+    .vps-tab-content a.btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .vps-tab-content p span.price {
+        font-size: 35px;
+        line-height: 45px;
+        margin-top: 25px;
+    }
+    .header-container .container .row {
+        position: relative;
+    }
+    .header-container .container .row > div:nth-child(2n) {
+        position: initial;
+    }
+    .header-menu > ul > li {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-left: 0px !important;
+    }
+    .header-menu > ul > li:first-child {
+        border-top: 0px !important;
+    }
+    .header-menu ul li a {
+        color: #1b435d;
+        padding: 12px 15px !important;
+    }
+    .header-menu ul ul li a {
+        padding-left: 30px !important;
+        width: auto;
+    }
+    .header-menu {
+        text-align: right;
+        position: initial;
+    }
+    .header-menu > ul {
+        position: absolute !important;
+        top: 43px !important;
+        left: 15px !important;
+        width: calc(100% - 30px) !important;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-height: 350px;
+        overflow-y: auto;
+    }
+    .header-menu ul, 
+    .header-menu ul ul, 
+    .header-menu ul ul ul, 
+    .header-menu > ul, 
+    .header-menu.align-center > ul, 
+    .header-menu > ul > li > ul, 
+    .header-menu > ul > li:hover > ul, 
+    .header-menu ul ul li:hover > ul {
+        position: relative;
+        left: 0;
+        right: auto;
+        top: 0;
+        width: 100%;
+        display: none;
+        padding: 0;
+        opacity: 1;
+        text-align: left;
+        z-index: 99999;
+    }
+    .header-menu ul li {
+        width: 100%;
+        border-top: 1px solid rgba(120, 120, 120, 0.2);
+    }
+    .header-menu > ul > li > a, 
+    .header-menu ul ul li a, 
+    .header-menu ul ul li:first-child > a, 
+    .header-menu ul ul li:last-child > a {
+        border-radius: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        background: none;
+    }
+    .header-menu ul li a {}
+    .header-menu ul li a i{
+        display: none;
+    }
+    .header-menu ul ul ul li a {
+        color: #000;
+        padding-left: 45px !important;
+    }
+    .header-menu #menu-button {
+        color: #fff;
+        font-size: 28px;
+        display: inline-block;
+        cursor: pointer;
+        padding-top: 7px;
+    }
+    .sticking .header-menu #menu-button {
+        color: #FF895D;
+    }
+    .header-menu .submenu-button {
+        position: absolute;
+        right: 0;
+        display: block;
+        width: 50px;
+        height: 38px;
+        border-left: 1px solid rgba(120, 120, 120, 0.2);
+        z-index: 10;
+        cursor: pointer;
+    }
+    .header-menu ul ul .submenu-button {
+        height: 42px;
+    }
+    .header-menu .submenu-button:before {
+        content: '';
+        position: absolute;
+        right: 22.5px;
+        top: 18px;
+        display: block;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-top-color: #1b435d;
+        z-index: 99;
+    }
+    .header-menu .submenu-opened:before {
+        transform: rotate(180deg);
+        top: 14px;
+    }
+    .header-menu ul ul .submenu-button:before {
+        top: 19.5px;
+    }
+    .header-menu #menu-button.menu-opened:before, 
+    .header-menu .submenu-button.submenu-opened:before {
+        border-top-color: #19799f;
+    }
+    .header-menu > ul > li:hover > a,
+    .header-menu > ul > li > a:hover {
+        background: transparent;
+    }
+    .header-menu > ul > li > ul,
+    .header-menu ul ul ul {
+        box-shadow: none;
+    }
+    .header-menu > ul > li > ul:before,
+    .header-menu ul ul ul:before {
+        display: none;
+    }
+    .header-menu ul ul ul li:first-child {
+        padding-top: 0;
+    }
+    .header-menu ul ul ul li:last-child {
+        padding-bottom: 0;
+    }
+    .header-menu ul ul li:hover > a, .header-menu ul ul li > a:hover {
+        color: #757575;
+    }
+    .sticking .header-menu > ul > li:hover:not(.active) > a {
+        color: #1b435d;
+    }
+    .main-banner .banner-content h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .pricing-nav-switch .nav-tabs li a {
+        padding: 6px 10px;
+    }
+    .vps-pricing-feature {
+        padding: 15px 5px 5px 5px;
+        width: calc((100% - 40px) / 4);
+    }
+    .single-feature {
+        padding: 20px 10px;
+    }
+    .single-feature a.btn {
+        padding: 6px 15px;
+    }
+    .single-ch-plan {
+        margin-bottom: 15px;
+        height: calc(100% - 30px);
+    }
+    .single-reason {
+        margin: 15px 0;
+    }
+    .data-centers .section-title {
+        padding-top: 50px;
+    }
+    .single-latest-news ul li{
+        font-size: 12px;
+    }
+    .single-latest-news ul li:not(:last-child) {
+        margin-right: 6px;
+        padding-right: 5px;
+    }
+    .single-latest-news ul li:last-child {
+        padding-left: 3px;
+    }
+    .single-footer {
+        margin: 15px 0;
+    }
+    .single-latest-news h2 a{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .single-reason h3 {
+        padding-top: 35px;
+        margin-bottom: 10px;
+    }
+    .header-style-three .header-menu #menu-button {
+        color: #FF895D;
+    }
+    .header-style-three {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header-style-two .header-menu > ul > li:hover:not(.active) > a, 
+    .header-style-two .header-menu > ul > li > a:hover, 
+    .header-style-three .header-menu > ul > li:hover:not(.active) > a, 
+    .header-style-three .header-menu > ul > li > a:hover,
+    .sticking.header-style-two .header-menu > ul > li:hover:not(.active) > a, 
+    .sticking.header-style-three .header-menu > ul > li:hover:not(.active) > a{
+        color: #1b435d;
+    }
+    .page-title {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .member-hover p {
+        line-height: 18px;
+    }
+    blockquote, 
+    .blockquote {
+        font-size: 14.5px;
+    }
+    .sidebar-social-icons {
+        text-align: left;
+    }
+    .aside {
+        margin-top: 50px;
+    }
+    .contact-info {
+        margin-bottom: 40px;
+    }
+    .blog-sidebar-left .aside {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .header-menu ul ul ul:after {
+        display: none;
+    }
+    .popular-domain {
+        margin-top: 50px;
+    }
+}
+
+/* 4. Medium devices (less than  768px) */
+@media (max-width: 767.98px) {
+    .pt-120 {
+        padding-top: 70px;
+    }
+    .pb-120 {
+        padding-bottom: 70px;
+    }
+    .header-menu #menu-button {
+        padding-top: 6px;
+    }
+    .vps-pricing-features {
+        margin-bottom: 30px;
+    }
+	.vps-tab-content {
+        padding: 15px;
+    }
+    .single-feature h3 {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .single-ch-plan {
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .single-feature {
+        max-width: 370px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+    .single-latest-news ul {
+        margin-bottom: 0;
+    }
+    .single-latest-news h2 {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        font-size: initial;
+    }
+    .main-banner-style-two .scroll-down {
+        max-width: 510px;
+        bottom: -20px;
+    }
+    .main-banner-style-two .scroll-down p {
+        width: 125px;
+    }
+    .main-banner-style-three .banner-content {
+        height: auto;
+        padding: 30px 0;
+    }
+    .main-banner-style-three .banner-content img {
+        max-width: 300px;
+        display: block;
+        margin: 15px auto;
+    }
+    .assistance {
+        text-align: center;
+    }
+    .expert-button {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .single-latest-news > ul:first-child + h2 {
+        margin-top: 0;
+    }
+    .share-wrap {
+        padding: 14px;
+    }
+    .share-wrap .share {
+        width: 100%;
+        text-align: left;
+    }
+    .share-wrap .share:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .share-wrap .share p {
+        float: left;
+    }
+    .share-wrap .share p span {
+        position: inherit;
+    }
+    .share-icons {
+        position: initial;
+        width: calc(100% - 30px);
+        padding-left: 80px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .related-post .single-popular-post {
+        margin-bottom: 15px;
+    }
+    .single-post-content p.quote {
+        font-size: 16px;
+        padding: 25px;
+    }
+    .history-image {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+/* 5. Small devices (less than  576px) */
+@media (max-width: 575.98px) {
+    .header-menu #menu-button {
+        padding-top: 0;
+    }
+    .header-container .logo {
+        padding-top: 2.5px;
+    }
+    .assistance {
+        padding: 50px 0;
+    }
+    .section-title {
+        padding-bottom: 40px;
+    }
+    .section-title h2,
+    .about-us h2{
+        font-size: 24px;
+    }
+    .header-menu > ul {
+        top: 31px !important;
+    }
+    .main-banner .banner-content {
+        min-height: 500px;
+        height: auto;
+    }
+	.vps-pricing-feature {
+        width: calc((100% - 20px) / 2);
+        height: 80px;
+    }
+    .main-banner .banner-content span {
+        font-size: 16px;
+    }
+    .main-banner .banner-content h2 {
+        font-size: 35px;
+        line-height: 43px;
+    }
+    .main-banner .banner-content p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .banner-content ul li a {
+        padding: 7px 15px;
+    }
+    .dc-amount li {
+        padding: 3px 0;
+    }
+    .data-centers .section-title {
+        padding-top: 0;
+    }
+    .home-video .video-info {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .home-video .video-info h2 {
+        font-size: 16px;
+    }    
+    .single-latest-news h2 {
+        margin-top: 10px;
+        line-height: 22px;
+    }
+    .single-footer h2 {
+        margin-bottom: 20px;
+    }
+    .footer-contact-info li {
+        padding: 3px 0 3px 23px;
+    }
+    .footer-links li {
+        padding: 3px 0;
+    }
+    .main-banner-style-two .scroll-down {
+        max-width: 300px;
+        bottom: -50px;
+        left: 15px;
+        right: auto;
+    }
+    .about-us > ul li a {
+        margin: 0 5px;
+        padding: 12px 10px;
+    }
+    .pagination {
+        display: block;
+        text-align: center;
+    }
+    .pagination li {
+        display: inline-block;
+    }
+    .pagination li + li {
+        margin-left: 10px;
+    }
+    .post-author {
+        padding: 15px;
+    }
+    .author-image {
+        margin-right: 0;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    .comment-author {
+        margin-right: 10px;
+    }
+    .comment-content p {
+        max-width: 100%;
+    }
+    .comment-reply {
+        margin-left: 30px;
+    }
+    .single-comment a {
+        position: initial;
+        padding: 4px 10px;
+        margin-bottom: 5px;
+    }
+    .domain-names ul ul li:nth-child(1) {
+        max-width: 100px;
+        font-size: 14px;
+    }
+    .domain-names ul ul li:nth-child(2) {
+        width: 100px;
+        font-size: 20px;
+    }
+    .domain-names ul ul li:nth-child(2) sup {
+        top: -6px;
+        right: 2px;
+    }
+    .domain-names ul ul li:nth-child(3) {
+        width: 30px;
+    }
+    .domain-names ul ul li:nth-child(3) a {
+        width: 30px;
+        height: 40px;
+        line-height: 38px;
+    }
+    .domain-search input[type=submit] {
+        position: initial;
+        margin-top: 15px;
+    }
+    .main-banner .banner-content ul {
+        margin-top: 20px;
+    }
+    .main-banner .banner-content ul li {
+        margin: 7.5px 5px;
+    }
+}

@@ -136,7 +136,7 @@ textarea:focus {
 img {
     max-width: 100%;
     height: auto;
-    /* margin-top: 25%; */
+    margin-top: -1%;
 }
 
 p:last-child{
@@ -299,7 +299,7 @@ blockquote,
     padding-bottom: 120px;
 }
 .pt-120 {
-    padding-top: 20px;
+    padding-top: 25px;
 }
 .pb-70 {
     padding-bottom: 70px;

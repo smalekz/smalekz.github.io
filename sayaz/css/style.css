@@ -136,7 +136,7 @@ textarea:focus {
 img {
     max-width: 100%;
     height: auto;
-    margin-top: 25%;
+    /* margin-top: 25%; */
 }
 
 p:last-child{
@@ -299,7 +299,7 @@ blockquote,
     padding-bottom: 120px;
 }
 .pt-120 {
-    padding-top: 120px;
+    padding-top: 20px;
 }
 .pb-70 {
     padding-bottom: 70px;
@@ -1861,8 +1861,8 @@ header.header{
 ==============================================*/
 
 .page-title {
-    padding-top: 65px;
-    padding-bottom: 80px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .page-title h2 {
     font-size: 30px;

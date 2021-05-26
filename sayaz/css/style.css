@@ -136,6 +136,7 @@ textarea:focus {
 img {
     max-width: 100%;
     height: auto;
+    margin-top: 25%;
 }
 
 p:last-child{

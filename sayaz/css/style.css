@@ -1762,6 +1762,7 @@ header.header{
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+    padding-top: 25%;
 }
 .footer-social-icons li a:hover {
     color: #ff895d;

@@ -407,7 +407,6 @@ header.header{
 
 /* 3.1: Logo */
 .header-container .logo {
-    padding-top: 9px;
 }
 .header-container .logo img {
     display: inline-block;

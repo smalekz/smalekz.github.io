@@ -52,7 +52,7 @@ a:hover,
 .about-us a.read-more span,
 .team-nav li a:hover,
 .ColorSwitcher--open .ColorSwitcher__control:before {
-	color: #ff895d;
+	color: #f90;
 }
 
 .sticking .register-button a:hover {
@@ -91,7 +91,7 @@ a:hover,
 .sidebar-social-icons li a:hover,
 .member-hover-wrap:before,
 .ColorSwitcher__control {
-	background-color: #ff895d;
+	background-color: #0b0;
 }
 
 .sticking.header-style-two .register-button a:hover, 

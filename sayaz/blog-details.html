@@ -30,20 +30,21 @@
 function sendmessage(){
     message = document.getElementById("botmessage").value;
     $.get("https://api.telegram.org/bot1548876217:AAGXXbjSdbxmtyd-c3IYXRnvz5Y9nFVuFCs/sendMessage?text="+message+"&chat_id=104710146");
-    $('#sucessMessage').html("Sucess!");
+    document.getElementById("sucessMessage").html("Sucess!");
     }
 </script>
 </head>
 
 <body>
     <!-- Preloader -->
-    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 595.5px; top: 901.5px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
+    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 319px; top: 1057px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
 
     <!-- Main header -->
     <header class="header">
-        <div class="header-container bg-primary sticking">
+        <div class="header-container bg-primary">
 	        <div class="container">
                 <div class="row">
+    
                     <div class="col-xl-3 col-lg-2 col-md-3 col-sm-5 col-9">
                         <!-- Logo -->
                         <div class="logo animated fadeInDown" data-animate="fadeInDown" data-delay=".5" style="animation-duration: 0.6s; animation-delay: 0.5s;">
@@ -55,15 +56,16 @@ function sendmessage(){
 </a>
                         </div>
                         <!-- End of Logo -->
-                    </div>
-                    <div class="col-xl-7 col-lg-8 col-md-6 col-sm-3 col-3">
-                        <nav data-animate="fadeInDown" data-delay=".75" class="animated" style="animation-duration: 0.6s; animation-delay: 0.75s;">
+                    </div><div class="col-xl-7 col-lg-8 col-md-6 col-sm-3 col-3">
+                        <nav data-animate="fadeInDown" data-delay=".75" class="animated fadeInDown" style="animation-duration: 0.6s; animation-delay: 0.75s;">
                             <!-- Header-menu -->
-                            <div class="header-menu"><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button" class="menu-opened"><i class="fa fa-bars"></i></div>
-                                <ul style="display: block;" class="">
+                            <div class="header-menu"><div id="menu-button" class="menu-opened"><i class="fa fa-bars" style="
+    color: white;
+"></i></div>
+                                <ul style="display: none;" class="">
                                     <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Home <i class="fa fa-angle-down"></i></a>
-                                        <ul style="display: block;" class="">
+                                        <ul style="display: none;" class="">
                                             <li><a href="index.html">Home V1</a></li>
                                             <li><a href="home-2.html">Home V2</a></li>
                                             <li><a href="home-3.html">Home V3</a></li>
@@ -73,7 +75,7 @@ function sendmessage(){
                                     <li><a href="http://billing.ywhmcs.com/cart.php?systpl=CryptoCloud">WHMCS</a></li>
                                     <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                                        <ul style="">
+                                        <ul style="display: none;">
                                             <li><a href="about.html">About</a></li>
                                             <li><a href="team.html">Team</a></li>
                                             <li><a href="testimonials.html">Testimonials</a></li>
@@ -90,14 +92,12 @@ function sendmessage(){
                             </div>
                             <!-- End of Header-menu -->
                         </nav>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 d-none d-sm-block">
-                        <!-- Register button -->
-                        <div class="register-button animated fadeInDown" data-animate="fadeInDown" data-delay="1" style="animation-duration: 0.6s; animation-delay: 1s;">
-                            <a class="btn btn-primary" href="http://billing.ywhmcs.com/clientarea.php?systpl=CryptoCloud">Client Area</a>
-                        </div>
-                        <!-- End of Register button -->
-                    </div>
+                    </div><form class="search-form animated fadeInUp" action="#" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s;animation-delay: 0.1s;width: 25%;display: block;margin-left: auto;margin-right: auto;/* padding-bottom: 5%; */">
+                            <input type="text" class="form-control" name="search" placeholder="Search" required="">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -108,15 +108,12 @@ function sendmessage(){
     <section class="bg-primary top-spacing">
         <div class="container">
             <div class="page-title text-white text-center">
-                <form class="search-form animated fadeInUp" action="#" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s;animation-delay: 0.1s;width: 25%;display: block;margin-left: auto;margin-right: auto;padding-bottom: 5%;">
-                            <input type="text" class="form-control" name="search" placeholder="Search" required="">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form><h2 data-animate="fadeInUp" data-delay="1.2" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 1.2s;font-weight: bold;font-size: xxx-large;">SAYAZ Cares!</h2>
+                
                 
 
             </div>
         </div>
-<img src="https://flextrade.com/wp-content/uploads/2019/09/Fotolia_257957753_Subscription_Monthly_M.jpg" alt="" data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 0.1s;display: block;margin-left: auto;margin-right: auto;padding-top: 0px;max-width: 50%;">
+<h2 data-animate="fadeInUp" data-delay="1.2" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 1.2s;font-weight: bold;font-size: xxx-large;text-align: center;color: white;">SAYAZ Cares!</h2><img src="https://flextrade.com/wp-content/uploads/2019/09/Fotolia_257957753_Subscription_Monthly_M.jpg" alt="" data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 0.1s;display: block;margin-left: auto;margin-right: auto;padding-top: 0px;max-width: 50%;border-radius: 50px;padding-bottom: 20;">
     </section>
     <!-- End of Page title -->
 
@@ -173,7 +170,7 @@ function sendmessage(){
                     <!-- Share post -->
 
                     <!-- Post author -->
-                    <div class="post-author clearfix animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s; animation-delay: 0.1s;">
+                    <div class="post-author clearfix animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s;animation-delay: 0.1s;width: 100%;">
                         <div class="author-image float-sm-left" style="
     margin: 0px;
     padding: 0px;
@@ -183,8 +180,8 @@ function sendmessage(){
     margin-right: 10px;
 ">
                         </div>
-                        <div class="author-info">
-                            <p>Posted by <span>SAYAZ Data Technologies</span></p>
+                        <div class="author-info" style="">
+                            <p style="">Posted by <span>SAYAZ Data Technologies</span></p>
                             <p>Data Science Solutions</p>
                             <ul class="list-inline">
                                 
@@ -309,7 +306,7 @@ function sendmessage(){
     <!-- End of Footer -->
 
     <!-- Back to top button -->
-    <div class="back-to-top show">
+    <div class="back-to-top">
         <a href="#">
             <i class="fa fa-hand-pointer-o" style="
     margin-top: 25%;

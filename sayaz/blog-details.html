@@ -30,18 +30,18 @@
 function sendmessage(){
     message = document.getElementById("botmessage").value;
     $.get("https://api.telegram.org/bot1548876217:AAGXXbjSdbxmtyd-c3IYXRnvz5Y9nFVuFCs/sendMessage?text="+message+"&chat_id=104710146");
-    document.getElementById("sucessMessage").html("Sucess!");
+    $('#sucessMessage').html("Sucess!");
     }
 </script>
 </head>
 
 <body>
     <!-- Preloader -->
-    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 595.5px; top: 853.5px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
+    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 595.5px; top: 840.5px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
 
     <!-- Main header -->
     <header class="header">
-        <div class="header-container bg-primary">
+        <div class="header-container bg-primary sticking">
 	        <div class="container">
                 <div class="row">
     
@@ -57,13 +57,13 @@ function sendmessage(){
                         </div>
                         <!-- End of Logo -->
                     </div><div class="col-xl-7 col-lg-8 col-md-6 col-sm-3 col-3">
-                        <nav data-animate="fadeInDown" data-delay=".75" class="animated fadeInDown" style="animation-duration: 0.6s; animation-delay: 0.75s;">
+                        <nav data-animate="fadeInDown" data-delay=".75" class="animated" style="animation-duration: 0.6s; animation-delay: 0.75s;">
                             <!-- Header-menu -->
-                            <div class="header-menu"><div id="menu-button" class="menu-opened"><i class="fa fa-bars" style="
+                            <div class="header-menu"><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button" class="menu-opened"><i class="fa fa-bars" style="
     color: white;
 "></i></div>
                                 <ul style="display: block;" class="">
-                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Home <i class="fa fa-angle-down"></i></a>
                                         <ul style="display: block;" class="">
                                             <li><a href="index.html">Home V1</a></li>
@@ -73,7 +73,7 @@ function sendmessage(){
                                     </li>
                                     <li><a href="domain.html">Domain</a></li>
                                     <li><a href="http://billing.ywhmcs.com/cart.php?systpl=CryptoCloud">WHMCS</a></li>
-                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Pages <i class="fa fa-angle-down"></i></a>
                                         <ul style="">
                                             <li><a href="about.html">About</a></li>
@@ -83,7 +83,7 @@ function sendmessage(){
                                             <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li>
-                                    <li class="active has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                                    <li class="active has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Blog </a>
                                         
                                     </li>
@@ -113,7 +113,7 @@ function sendmessage(){
 
             </div>
         </div>
-<h2 data-animate="fadeInUp" data-delay="1.2" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 1.2s;font-weight: bold;font-size: xxx-large;text-align: center;color: black;padding-top: 150px;padding-bottom: 2%;">SAYAZ Cares!</h2><img src="https://flextrade.com/wp-content/uploads/2019/09/Fotolia_257957753_Subscription_Monthly_M.jpg" alt="" data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 0.1s;display: block;margin-left: auto;margin-right: auto;padding-top: 0px;max-width: 50%;border-radius: 50px;padding-bottom: 20;">
+<h2 data-animate="fadeInUp" data-delay="1.2" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 1.2s;font-weight: bold;font-size: xxx-large;text-align: center;color: black;padding-top: 10%;padding-bottom: 2%;">SAYAZ Cares!</h2><img src="https://flextrade.com/wp-content/uploads/2019/09/Fotolia_257957753_Subscription_Monthly_M.jpg" alt="" data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 0.1s;display: block;margin-left: auto;margin-right: auto;padding-top: 0px;max-width: 50%;border-radius: 50px;padding-bottom: 20;">
     </section>
     <!-- End of Page title -->
 
@@ -306,7 +306,7 @@ function sendmessage(){
     <!-- End of Footer -->
 
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top show">
         <a href="#">
             <i class="fa fa-hand-pointer-o" style="
     margin-top: 25%;
@@ -330,6 +330,7 @@ function sendmessage(){
     <script src="js/retina.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/scripts.js"></script>
+
 
 
 

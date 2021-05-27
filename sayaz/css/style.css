@@ -144,7 +144,7 @@ p:last-child{
 }
 
 a {
-    color: #ff895d;
+    color: #ff4500;
 }
 a:hover {
     color: #e05521;
@@ -1846,7 +1846,7 @@ header.header{
     width: 40px;
     height: 40px;
     display: inline-block;
-    background: #ff895d;
+    background: #ff4500;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;

@@ -391,7 +391,7 @@ header.header{
 }
 .header-container {
     padding-top: 35px;
-    padding-bottom: 17px;
+    /* padding-bottom: 17px; */
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
@@ -403,7 +403,7 @@ header.header{
     padding-bottom: 9px;
 }
 .top-spacing {
-    padding-top: 110px;
+    /* padding-top: 110px; */
 }
 
 /* 3.1: Logo */
@@ -1862,7 +1862,7 @@ header.header{
 
 .page-title {
     padding-top: 25px;
-    padding-bottom: 25px;
+    /* padding-bottom: 25px; */
 }
 .page-title h2 {
     font-size: 30px;
@@ -2218,7 +2218,7 @@ header.header{
 /* 20.1: Search */
 .search-form {
     position: relative;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 .search-form input{
     font-family: "Work Sans", sans-serif;
@@ -2228,6 +2228,7 @@ header.header{
     border: none;
     border-radius: 0;
     padding: 0 30px;
+    border-radius: 50px;
 }
 .search-form input:focus{
     border: 0;
@@ -2475,7 +2476,7 @@ header.header{
 .post-author {
     border: 1px solid #e0f3ff;
     margin-top: 30px;
-    padding: 25px 30px;
+    padding: 20px 30px;
 }
 .author-image {
     margin-right: 30px;
@@ -2485,7 +2486,7 @@ header.header{
     border-radius: 100%;
 }
 .author-info {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .author-info p:first-child {
     font-size: 12px;

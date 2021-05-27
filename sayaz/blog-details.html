@@ -29,11 +29,11 @@
 
 <body>
     <!-- Preloader -->
-    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 593px; top: 925px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
+    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 599px; top: 915px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
 
     <!-- Main header -->
     <header class="header">
-        <div class="header-container bg-primary">
+        <div class="header-container bg-primary sticking">
 	        <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-2 col-md-3 col-sm-5 col-9">
@@ -49,13 +49,13 @@
                         <!-- End of Logo -->
                     </div>
                     <div class="col-xl-7 col-lg-8 col-md-6 col-sm-3 col-3">
-                        <nav data-animate="fadeInDown" data-delay=".75" class="animated" style="animation-duration: 0.6s; animation-delay: 0.75s;">
+                        <nav data-animate="fadeInDown" data-delay=".75" class="animated fadeInDown" style="animation-duration: 0.6s; animation-delay: 0.75s;">
                             <!-- Header-menu -->
-                            <div class="header-menu"><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div><div id="menu-button"><i class="fa fa-bars"></i></div>
-                                <ul style="">
-                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                            <div class="header-menu"><div id="menu-button" class="menu-opened"><i class="fa fa-bars"></i></div>
+                                <ul style="display: block;" class="">
+                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Home <i class="fa fa-angle-down"></i></a>
-                                        <ul style="">
+                                        <ul style="display: block;" class="">
                                             <li><a href="index.html">Home V1</a></li>
                                             <li><a href="home-2.html">Home V2</a></li>
                                             <li><a href="home-3.html">Home V3</a></li>
@@ -63,7 +63,7 @@
                                     </li>
                                     <li><a href="domain.html">Domain</a></li>
                                     <li><a href="http://billing.ywhmcs.com/cart.php?systpl=CryptoCloud">WHMCS</a></li>
-                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Pages <i class="fa fa-angle-down"></i></a>
                                         <ul style="">
                                             <li><a href="about.html">About</a></li>
@@ -73,11 +73,11 @@
                                             <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li>
-                                    <li class="active has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                                    <li class="active has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Blog </a>
                                         
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    
                                 </ul>
                             </div>
                             <!-- End of Header-menu -->
@@ -103,7 +103,7 @@
                 <form class="search-form animated fadeInUp" action="#" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s;animation-delay: 0.1s;width: 25%;display: block;margin-left: auto;margin-right: auto;padding-bottom: 5%;">
                             <input type="text" class="form-control" name="search" placeholder="Search" required="">
                             <button type="submit"><i class="fa fa-search"></i></button>
-                        </form><h2 data-animate="fadeInUp" data-delay="1.2" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 1.2s;font-weight: bold;">SAYAZ Cares!</h2>
+                        </form><h2 data-animate="fadeInUp" data-delay="1.2" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 1.2s;font-weight: bold;font-size: xxx-large;">SAYAZ Cares!</h2>
                 
 
             </div>
@@ -219,7 +219,10 @@
 
     <!-- Footer -->
     <footer class="footer text-light bg-secondary">
-        <div class="top-footer">
+        <div class="top-footer" style="
+    /* text-align: center; */
+    align-items: center;
+">
             <div class="container">
                 <div class="row">
                     <!-- Single footer -->
@@ -229,41 +232,23 @@
                             <ul class="footer-contact-info">
                                 <li data-animate="fadeInUp" data-delay=".05" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.05s;">
                                     <i class="fa fa-phone"></i>
-                                    <a href="tel:+123456789">(+1) 123-456-789</a>,
-                                    <a href="tel:+123456789">(+1) 987-654-321</a>
+                                    <a href="tel:+19128881020">(+1) 912-888-1020</a>,
+                                    
                                 </li>
                                 <li data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.1s;">
                                     <i class="fa fa-envelope-o"></i>
-                                    <a href="mailto:john-doe@example.com">john-doe@example.com</a>
+                                    <a href="mailto:smalekzp@gmail.com">smalekzp@gmail.com</a>
                                 </li>
-                                <li data-animate="fadeInUp" data-delay=".15" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.15s;"><i class="fa fa-map-marker"></i>0123 Cameron Road, Niagara Falls, NY 0123</li>
+                                <li data-animate="fadeInUp" data-delay=".15" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.15s;"><i class="fa fa-map-marker"></i><p>"SAYAZ Data Technologies LLC,<br> 
+ 227 Madison St New York, NY 10002, USA"</p></li>
                             </ul>
-                            <ul class="footer-social-icons">
-                                <li data-animate="fadeInUp" data-delay=".2" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.2s;"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li data-animate="fadeInUp" data-delay=".25" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.25s;"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li data-animate="fadeInUp" data-delay=".3" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.3s;"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                <li data-animate="fadeInUp" data-delay=".35" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.35s;"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                <li data-animate="fadeInUp" data-delay=".4" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.4s;"><a href="#" target="_blank"><i class="fa fa-feed"></i></a></li>
-                                <li data-animate="fadeInUp" data-delay=".45" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.45s;"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                     <!-- End of Single footer -->
 
                     <!-- Single footer -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer">
-                            <h2 data-animate="fadeInUp" data-delay=".4" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.4s;">Recent News</h2>
-                            <div class="single-footer-post animated fadeInUp" data-animate="fadeInUp" data-delay=".45" style="animation-duration: 0.6s; animation-delay: 0.45s;">
-                                <a href="#">Microsoft announces general availability of Azure Event Grid</a>
-                                <span><i class="fa fa-calendar-o"></i><a href="#">Jan 19, 2018</a></span>
-                            </div>
-                            <div class="single-footer-post animated fadeInUp" data-animate="fadeInUp" data-delay=".5" style="animation-duration: 0.6s; animation-delay: 0.5s;">
-                                <a href="#">Top 6 trends impacting enterprise mobility arround world in 2018</a>
-                                <span><i class="fa fa-calendar-o"></i><a href="#">Jan 19, 2018</a></span>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- End of Single footer -->
 
                     <!-- Single footer -->
@@ -271,11 +256,19 @@
                         <div class="single-footer">
                             <h2 data-animate="fadeInUp" data-delay=".5" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.5s;">Resource &amp; Support</h2>
                             <ul class="footer-links">
-                                <li data-animate="fadeInUp" data-delay=".55" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.55s;"><a href="#"><i class="fa fa-angle-right"></i>How to Transfer a Website</a></li>
-                                <li data-animate="fadeInUp" data-delay=".6" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.6s;"><a href="#"><i class="fa fa-angle-right"></i>Search Advertising</a></li>
-                                <li data-animate="fadeInUp" data-delay=".65" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.65s;"><a href="#"><i class="fa fa-angle-right"></i>Affiliate Program</a></li>
-                                <li data-animate="fadeInUp" data-delay=".7" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.7s;"><a href="#"><i class="fa fa-angle-right"></i>Start Watch Tutorials</a></li>
-                                <li data-animate="fadeInUp" data-delay=".75" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.75s;"><a href="#"><i class="fa fa-angle-right"></i>Start a Web Hosting Business</a></li>
+                                <li data-animate="fadeInUp" data-delay=".55" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.55s;"><a href="/sayaz/"><i class="fa fa-angle-right"></i>Home page</a></li>
+                                <li data-animate="fadeInUp" data-delay=".6" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.6s;"><a href="/sayaz/contact"><i class="fa fa-angle-right"></i>Contact us</a></li>
+                                
+                                
+                                
+                            </ul>
+<ul class="footer-social-icons">
+                                
+                                
+                                
+                                <li data-animate="fadeInUp" data-delay=".35" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.35s;"><a href="https://www.linkedin.com/company/18215888" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li data-animate="fadeInUp" data-delay=".4" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.4s;"><a href="https://smalekz.github.io/sayaz/" target="_blank"><i class="fa fa-feed"></i></a></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -285,9 +278,8 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-footer">
                             <h2 data-animate="fadeInUp" data-delay=".75" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.75s;">Newsletter</h2>
-                            <p data-animate="fadeInUp" data-delay=".8" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.8s;">Sign up to Newsletter to get our Latest News &amp; Special Offers</p>
-                            <form class="needs-validation animated fadeInUp" data-animate="fadeInUp" data-delay=".85" action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank" style="animation-duration: 0.6s; animation-delay: 0.85s;">
-                                <input class="form-control" type="email" name="EMAIL" autocomplete="off" placeholder="Your E-mail Address" required="">
+                            <p data-animate="fadeInUp" data-delay=".8" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.8s;">Send a quick message to us</p>
+                            <form class="needs-validation animated fadeInUp" data-animate="fadeInUp" data-delay=".85" action="mailto:smalekzp@gmail.com" method="post" name="SAYAZ Quick mail" target="_blank" style="animation-duration: 0.6s; animation-delay: 0.85s;"><input class="form-control" type="text" name="message" autocomplete="on" placeholder="Your quick message" required="">
                                 <button type="submit"><i class="fa fa-paper-plane"></i></button>
                             </form>
                         </div>
@@ -300,7 +292,7 @@
         <!-- Copyright -->
         <div class="copyright">
             <div class="container">
-                <p data-animate="fadeInDown" data-delay=".9" class="animated fadeInDown" style="animation-duration: 0.6s; animation-delay: 0.9s;">Copyright © 2018. All rights reserved Theme Shared by <a href="https://www.mellatweb.com/"> Mellatweb.com</a>.</p>
+                <p data-animate="fadeInDown" data-delay=".9" class="animated fadeInDown" style="animation-duration: 0.6s; animation-delay: 0.9s;">Copyright © All rights reserved by <a href="https://smalekz.github.io/sayaz/">SAYAZ Data Technologies</a>.</p>
             </div>
         </div>
         <!-- End of Copyright -->
@@ -308,9 +300,11 @@
     <!-- End of Footer -->
 
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top show">
         <a href="#">
-            <i class="fa fa-hand-pointer-o"></i>
+            <i class="fa fa-hand-pointer-o" style="
+    margin-top: 25%;
+"></i>
         </a>
     </div>
     <!-- End of Back to top button -->
@@ -330,6 +324,7 @@
     <script src="js/retina.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/scripts.js"></script>
+
 
 
 

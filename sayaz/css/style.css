@@ -296,7 +296,7 @@ blockquote,
 
 /* 1.4: Padding */
 .pb-120 {
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
 }
 .pt-120 {
     padding-top: 25px;
@@ -2388,12 +2388,12 @@ header.header{
 }
 .single-post-content p {
     font-family: "Work sans", sans-serif;
-    color: #90a0aa;
+    color: #000;
 }
 .single-post-content p.quote {
     font-size: 18px;
-    color: #708790;
-    background: #f4fbff;
+    color: #00f;
+    background: #e0f4ff;
     padding: 35px 30px;
     width: calc(100% - 40px);
     margin: 25px auto;
@@ -2411,7 +2411,8 @@ header.header{
 
 /* 21.1: Share */
 .share-wrap {
-    border: 1px solid #e0f3ff;
+    border: 1px solid #d4d4d4;
+    border-width: 1px 0px 0px 0px;
     padding: 14px 14px 4px;
     margin-top: 25px;
     overflow: hidden;

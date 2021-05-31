@@ -32,16 +32,22 @@ function sendmessage(){
     $.get("https://api.telegram.org/bot1548876217:AAGXXbjSdbxmtyd-c3IYXRnvz5Y9nFVuFCs/sendMessage?text="+message+"&chat_id=104710146");
     $('#sucessMessage').html("Sucess!");
     }
-</script>
+</script><script>
+function sendsearch(){
+    message = document.getElementById("botmessage").value;
+    $.get("https://www.google.com/search?q=site%3Ahttps%3A%2F%2Fsmalekz.github.io%2Fsayaz+"+message+"");
+    $('#sucessMessage').html("Sucess!");
+    }
+</script>    
 </head>
 
 <body>
     <!-- Preloader -->
-    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 469.5px; top: 934px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
+    <div id="fakeLoader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 99999; display: none;"><div class="fl spinner6" style="position: absolute; left: 578.5px; top: 813px;"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div></div>
 
     <!-- Main header -->
     <header class="header">
-        <div class="header-container bg-primary">
+        <div class="header-container bg-primary sticking">
 	        <div class="container">
                 <div class="row">
     
@@ -59,11 +65,11 @@ function sendmessage(){
                     </div><div class="col-xl-7 col-lg-8 col-md-6 col-sm-3 col-3">
                         <nav data-animate="fadeInDown" data-delay=".75" class="animated" style="animation-duration: 0.6s; animation-delay: 0.75s;">
                             <!-- Header-menu -->
-                            <div class="header-menu">
-                                <ul style="display: none;" class="">
-                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                            <div class="header-menu"><div id="menu-button"><i class="fa fa-bars"></i></div>
+                                <ul style="" class="">
+                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Home <i class="fa fa-angle-down"></i></a>
-                                        <ul style="display: none;" class="">
+                                        <ul style="" class="">
                                             <li><a href="index.html">Home V1</a></li>
                                             <li><a href="home-2.html">Home V2</a></li>
                                             <li><a href="home-3.html">Home V3</a></li>
@@ -71,9 +77,9 @@ function sendmessage(){
                                     </li>
                                     <li><a href="domain.html">Domain</a></li>
                                     <li><a href="http://billing.ywhmcs.com/cart.php?systpl=CryptoCloud">WHMCS</a></li>
-                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                                    <li class="has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Pages <i class="fa fa-angle-down"></i></a>
-                                        <ul style="display: none;">
+                                        <ul style="">
                                             <li><a href="about.html">About</a></li>
                                             <li><a href="team.html">Team</a></li>
                                             <li><a href="testimonials.html">Testimonials</a></li>
@@ -81,7 +87,7 @@ function sendmessage(){
                                             <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li>
-                                    <li class="active has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
+                                    <li class="active has-sub"><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span><span class="submenu-button"></span>
                                         <a href="#">Blog </a>
                                         
                                     </li>
@@ -92,7 +98,7 @@ function sendmessage(){
                         </nav>
                     </div><form class="search-form animated fadeInUp" action="#" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s;animation-delay: 0.1s;width: 25%;display: block;margin-left: auto;margin-right: auto;padding-bottom: 0%;">
                             <input type="text" class="form-control" name="search" placeholder="Search" required="">
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <button type="submit" onclick="sendsearch()"><i class="fa fa-search"></i></button>
                         </form>
                     
                     
@@ -136,7 +142,7 @@ function sendmessage(){
 
                         <p class="quote animated fadeInUp" data-animate="fadeInUp" data-delay=".1" style="animation-duration: 0.6s;animation-delay: 0.1s;color: blue;">SAYAZ always cares about you!</p>
 
-                        <h2 data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.1s;">The Standard SAYA data technologies from 2016</h2>
+                        <h2 data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s; animation-delay: 0.1s;">The Standard SAYAZ data technologies from 2016</h2>
 
                         <p data-animate="fadeInUp" data-delay=".1" class="animated fadeInUp" style="animation-duration: 0.6s;animation-delay: 0.1s;text-align: justify;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est  rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
                     </div>
@@ -304,7 +310,7 @@ function sendmessage(){
     <!-- End of Footer -->
 
     <!-- Back to top button -->
-    <div class="back-to-top">
+    <div class="back-to-top show">
         <a href="#">
             <i class="fa fa-hand-pointer-o" style="
     margin-top: 25%;
@@ -328,6 +334,7 @@ function sendmessage(){
     <script src="js/retina.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/scripts.js"></script>
+
 
 
 </body></html>

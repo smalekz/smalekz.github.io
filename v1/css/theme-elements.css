@@ -14574,7 +14574,7 @@ section.section-custom-map section.section {
 /* Home Intro */
 .home-intro {
 	background-color: #212529;
-	/*margin-bottom: 60px;*/
+	margin-bottom: 60px;
 	overflow: hidden;
 	padding: 38.4px 0;
 	padding: 2.4rem 0;

@@ -9246,27 +9246,32 @@ html.boxed .nav-secondary.sticky-active {
 	background-attachment: fixed;
 	position: relative;
 	clear: both;
+	opacity: 0.5;
 }
 
 .parallax:not(.page-header):not(.match-height):not([class*="section-height-"]) {
 	margin: 70px 0;
 	padding: 50px 0;
+	opacity: 0.5;
 }
 
 .parallax blockquote {
 	border: 0;
 	padding: 0 10%;
+	opacity: 0.5;
 }
 
 .parallax blockquote i.fa-quote-left {
 	font-size: 34px;
 	position: relative;
 	left: -5px;
+	opacity: 0.5;
 }
 
 .parallax blockquote p {
 	font-size: 24px;
 	line-height: 30px;
+	opacity: 0.5;
 }
 
 .parallax blockquote span {
@@ -9275,11 +9280,13 @@ html.boxed .nav-secondary.sticky-active {
 	color: #999;
 	position: relative;
 	left: -5px;
+	opacity: 0.5;
 }
 
 .parallax-disabled .parallax-background {
 	background-attachment: scroll !important;
 	background-position: 50% 50% !important;
+	opacity: 0.5;
 }
 
 /* Pricing Tables */

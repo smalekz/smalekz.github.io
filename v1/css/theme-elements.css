@@ -9240,7 +9240,7 @@ html.boxed .nav-secondary.sticky-active {
 
 /* Parallax */
 .parallax-background{
-	opacity: 0.5;
+	opacity: 0.3;
 }
 .parallax {
 	background-color: transparent;

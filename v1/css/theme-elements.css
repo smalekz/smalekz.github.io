@@ -2212,7 +2212,7 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 .call-to-action.call-to-action-in-footer {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-bottom: -50px !important;
 }
 
@@ -2235,7 +2235,7 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 }
 
 .call-to-action.call-to-action-in-footer-margin-top {
-	margin-top: 60px;
+	margin-top: 0px;
 }
 
 .container .call-to-action {

@@ -1359,14 +1359,16 @@
 								<strong>Success!</strong>.
 							</div>
 							<div class="alert alert-danger d-none" id="newsletterError"></div>
-							<form id="newsletterForm" method="get" action="https://www.google.com/search" target="_blank" class="mr-4 mb-3 mb-md-0">
-								<div class="input-group input-group-rounded">
-									<input class="form-control form-control-sm bg-light" placeholder="seach term" name="q" id="newsletterEmail" type="text">
-									<span class="input-group-append">
-										<button class="btn btn-light text-color-dark" type="submit"><strong>GO!</strong></button>
-									</span>
-								</div>
-							</form>
+							<form role="search" target="_blank" action="https://www.google.com/search" method="get">
+													<div class="simple-search input-group">
+<input type="hidden" name="sitesearch" value="https://smalekz.github.io/v1">                             <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
+														<span class="input-group-append">
+															<button class="btn" type="submit">
+																<i class="fa fa-search header-nav-top-icon"></i>
+															</button>
+														</span>
+													</div>
+												</form>
 						</div>
 						<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
 							<div class="contact-details">

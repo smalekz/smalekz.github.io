@@ -569,7 +569,7 @@ section .container {
 .testimonials .testimonial-item h4 {
     font-size: 14px;
     color: #999;
-    margin: 0 0 0 45px;
+    margin: 0 0 20px 45px;
 }
 
 .testimonials .testimonial-item .quote-icon-left,

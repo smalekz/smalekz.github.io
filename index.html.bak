@@ -100,9 +100,9 @@
                         <li ccid="3040">
 							<a ccid="2911" class="nav-link" href="https://SAYAZDT.github.io/Blog.html" target="_blank" style="color: white; --darkreader-inline-color:#c1bfbd;" data-darkreader-inline-color="">Blog</a>
 						</li> 
-						<li ccid="5060">
+						<!--<li ccid="5060">
 							<a ccid="2911" class="nav-link" href="https://SAYAZDT.github.io" target="_blank" style="color: white; --darkreader-inline-color:#c1bfbd;" data-darkreader-inline-color="">Temp</a>
-						</li>   
+						</li>-->   
                                                  
                                                  
                     </ul>                     

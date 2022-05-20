@@ -184,52 +184,44 @@
                 </div>                 
                 <div ccid="11225" class="row skills-content"> 
                     <div ccid="11280" class="col-lg-6"> 
-                        
-						<div ccid="11329" class="progress"> 
+                        <div ccid="11329" class="progress"> 
                             <span ccid="11382" class="skill">Deep machine learning research<i ccid="11407" class="val"></i></span> 
                             <div ccid="11468" class="progress-bar-wrap"> 
                                 <div ccid="11534" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>                                 
                             </div>                             
                         </div>                         
-                                                
+                        <div ccid="11824" class="progress"> 
+                            <span ccid="11877" class="skill">Business Data analysis<i ccid="11901" class="val"></i></span> 
+                            <div ccid="11961" class="progress-bar-wrap"> 
+                                <div ccid="12027" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>                                 
+                            </div>                             
+                        </div>                         
                         <div ccid="12316" class="progress"> 
                             <span ccid="12369" class="skill">Financial analysis<i ccid="12400" class="val"></i></span> 
                             <div ccid="12460" class="progress-bar-wrap"> 
                                 <div ccid="12526" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>                                 
                             </div>                             
-                        </div>
-						
-						<div ccid="13401" class="progress"> 
-                            <span ccid="13454" class="skill">Graphic (UI/UX/Poster/Video) design<i ccid="13488" class="val"></i></span> 
-                            <div ccid="13548" class="progress-bar-wrap"> 
-                                <div ccid="13614" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>                                 
-                            </div>                             
-                        </div>
-						
-                    </div>                
-                    <div ccid="12860" class="col-lg-6">
-						
-						<div ccid="11824" class="progress"> 
-                            <span ccid="11877" class="skill">Business Data analysis<i ccid="11901" class="val"></i></span> 
-                            <div ccid="11961" class="progress-bar-wrap"> 
-                                <div ccid="12027" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>                                 
-                            </div>                             
-                        </div>
-                        
-						<div ccid="12909" class="progress"> 
+                        </div>                         
+                    </div>                     
+                    <div ccid="12860" class="col-lg-6"> 
+                        <div ccid="12909" class="progress"> 
                             <span ccid="12962" class="skill">Marketing strategy<i ccid="12986" class="val"></i></span> 
                             <div ccid="13046" class="progress-bar-wrap"> 
                                 <div ccid="13112" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>                                 
                             </div>                             
-                        </div>                        
-                                                 
+                        </div>                         
+                        <div ccid="13401" class="progress"> 
+                            <span ccid="13454" class="skill">Graphic (UI/UX/Poster/Video) design<i ccid="13488" class="val"></i></span> 
+                            <div ccid="13548" class="progress-bar-wrap"> 
+                                <div ccid="13614" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>                                 
+                            </div>                             
+                        </div>                         
                         <div ccid="13903" class="progress"> 
                             <span ccid="13956" class="skill">Web design<i ccid="13986" class="val"></i></span> 
                             <div ccid="14046" class="progress-bar-wrap"> 
                                 <div ccid="14112" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>                                 
                             </div>                             
-                        </div>  
-						
+                        </div>                         
                     </div>                     
                 </div>                 
             </div>

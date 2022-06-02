@@ -397,7 +397,7 @@
 								Working with Saber was fun and insightful, what really impressed me the most was not only his deep knowledge on AI topics but also his attitude to let us know the concepts in depth. He is a great person to work with and he is not afraid of challenges. Working in a team with Saber means that you can trust him with the logical facts while being free to propose ideas and he can guide you along with the technicalities in a very nice and structured way. <i ccid="21754" class="bx bxs-quote-alt-right quote-icon-right"></i> </p> 
                                 <img ccid="21849" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/user_photos/001/093/876/datas/profile.jpg" class="testimonial-img" alt=""> 
 								<h3 ccid="20220" style="font-weight:bold;"><a class='btn btn-link' href='https://www.linkedin.com/in/shadihabibiparsa/'>Shadi H.Parsa</a></h3>
-                                <h4 ccid="22024">Technology strategist</h4> 
+                                <h4 ccid="22024">Technology Strategist</h4> 
                             </div>                             
                         </div>
                         <!-- End testimonial item -->
@@ -414,6 +414,16 @@
                         </div>
                         <!-- End testimonial item -->
 						
+						<div ccid="22248" class="swiper-slide swiper-slide-active swiper-slide-duplicate-active swiper-slide-next swiper-slide-duplicate-prev" role="group" aria-label="7 / 11" style="width: 346.667px; margin-right: 20px;" data-swiper-slide-index="3"> 
+                            <div ccid="22305" class="testimonial-item"> 
+                                <p ccid="22370"> <i ccid="22374" class="bx bxs-quote-alt-left quote-icon-left"></i>I have really enjoyed the DS course taught by Saber. He is creative, always finding new ways to engage and inspire students. Sabir is hard working and attentive. He is always open for new ideas, projects and solutions.<i ccid="22640" class="bx bxs-quote-alt-right quote-icon-right"></i> </p> 
+                                <img ccid="22735" src="https://i1.rgstatic.net/ii/profile.image/969778281865216-1608224568921_Q512/Dinara-Khudjatova.jpg" class="testimonial-img" alt=""> 
+								<h3 ccid="20220" style="font-weight:bold;"><a class='btn btn-link' href='https://www.linkedin.com/in/khujatova/'>Dinara Khudjatova</a></h3>
+                                <h4 ccid="22911">Business Analyst</h4> 
+                            </div>                             
+                        </div>
+						<!-- End testimonial item -->
+						
 						<div ccid="21383" class="swiper-slide swiper-slide-next" role="group" aria-label="6 / 11" style="width: 346.667px; margin-right: 20px;" data-swiper-slide-index="2"> 
                             <div ccid="21440" class="testimonial-item"> 
                                 <p ccid="21505"> <i ccid="21509" class="bx bxs-quote-alt-left quote-icon-left"></i> 
@@ -425,15 +435,18 @@
                             </div>                             
                         </div>
                         <!-- End testimonial item -->
-                        
-                        <div ccid="22248" class="swiper-slide swiper-slide-active swiper-slide-duplicate-active swiper-slide-next swiper-slide-duplicate-prev" role="group" aria-label="7 / 11" style="width: 346.667px; margin-right: 20px;" data-swiper-slide-index="3"> 
-                            <div ccid="22305" class="testimonial-item"> 
-                                <p ccid="22370"> <i ccid="22374" class="bx bxs-quote-alt-left quote-icon-left"></i>I have really enjoyed the DS course taught by Saber. He is creative, always finding new ways to engage and inspire students. Sabir is hard working and attentive. He is always open for new ideas, projects and solutions.<i ccid="22640" class="bx bxs-quote-alt-right quote-icon-right"></i> </p> 
-                                <img ccid="22735" src="https://storage.googleapis.com/kaggle-avatars/images/4536433-kg.jpg" class="testimonial-img" alt=""> 
-								<h3 ccid="20220" style="font-weight:bold;"><a class='btn btn-link' href='https://www.linkedin.com/in/khujatova/'>Dinara Khudjatova</a></h3>
-                                <h4 ccid="22911">Business Analyst</h4> 
+						
+						<div ccid="21383" class="swiper-slide swiper-slide-next" role="group" aria-label="6 / 11" style="width: 346.667px; margin-right: 20px;" data-swiper-slide-index="2"> 
+                            <div ccid="21440" class="testimonial-item"> 
+                                <p ccid="21505"> <i ccid="21509" class="bx bxs-quote-alt-left quote-icon-left"></i> 
+								Sabir is very enthusiastic about his job, he is always focused on results. Sabir uses a proactive approach in solving issues that may not even be directly related to his direct responsibilities. He has a perfect time management skills and not only meets deadlines but also delivers more detailed work than requested. Sabir covers major part of top big data skills such as: analytical skills, machine learning, skills of programming, sql, skills of data mining, problem solving skills e.t. But more importantly, he constantly continues to develop his knowledge and share with others.
+								<i ccid="21754" class="bx bxs-quote-alt-right quote-icon-right"></i></p> 
+                                <img ccid="21849" src="https://media-exp1.licdn.com/dms/image/C5603AQEzjSP6Xtbrjw/profile-displayphoto-shrink_800_800/0/1517881129985?e=1659571200&v=beta&t=h2rqtL-Qr2YYjr9ZlB_xb2BfjUfeKIqTIHWgxUHtel0" class="testimonial-img" alt="">
+								<h3 ccid="20220" style="font-weight:bold;"><a class='btn btn-link' href='https://www.linkedin.com/in/bayaz-aliyeva-a807ba155/'>Saida Qasimkhanova</a></h3>
+                                <h4 ccid="22024">Project Strategist</h4> 
                             </div>                             
                         </div>
+                        <!-- End testimonial item -->
 						
 						<div ccid="22248" class="swiper-slide swiper-slide-active swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-prev" role="group" aria-label="7 / 11" style="width: 346.667px; margin-right: 20px;" data-swiper-slide-index="3"> 
                             <div ccid="22305" class="testimonial-item"> 

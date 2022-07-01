@@ -13,24 +13,24 @@
 		<meta property="og:locale" content="az_AZ">
 		<meta property="og:locale" content="us_US">
 		<meta property="og:title" content="Saber Malekzadeh">
-		<meta property="og:url" content="https://smalek.github.io">
+		<meta property="og:url" content="https://smalekz.github.io">
 		<meta property="og:site_name" content="SAYAZ Data Technologies">
-		<meta property="og:image" content="https://sayazdt.github.io/img/logo.png">
-		<meta property="og:image:secure_url" content="https://sayazdt.github.io/img/logo.png">
-		<meta property="og:url" content="https://smalek.github.io">
+		<meta property="og:image" content="https://smalekz.github.io/avatar.png">
+		<meta property="og:image:secure_url" content="https://smalekz.github.io/avatar.png">
+		<meta property="og:url" content="https://smalekz.github.io">
 		
 		
 		<script type="application/ld+json">
 		{
 		"@context": "http://schema.org/",
-		"@type": "Automation Company",
-		"name": "SAYAZ Data Technologies",
-		"url": "https://smalek.github.io",
-		"logo": "https://sayazdt.github.io/img/logo.png", 
-		"image": "https://sayazdt.github.io/img/logo.png",
+		"@type": "Person",
+		"name": "Saber Malekzadeh",
+		"url": "https://smalekz.github.io",
+		"logo": "https://smalekz.github.io/avatar.png", 
+		"image": "https://smalekz.github.io/avatar.png",
 		"telephone": "+994 50 887 9893",
 		"email": "mailto:smalekzp@gmail.com",
-		"@id": "https://smalek.github.io",
+		"@id": "https://smalekz.github.io",
 		"openingHoursSpecification": [
 				{
 				  "@type": "OpeningHoursSpecification",
@@ -79,7 +79,7 @@
 		"sameAs": [
 		  "https://www.instagram.com/sabermalek/",
 		  "https://www.linkedin.com/in/smalekzp/",
-		  "http://smalek.github.io"
+		  "http://smalekz.github.io"
 		 ]
 		}
 		</script>

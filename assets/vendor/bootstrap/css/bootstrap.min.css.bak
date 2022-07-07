@@ -600,7 +600,7 @@ progress {
 }
 
 .img-fluid {
-    max-width: 45%;
+    max-width: 65%;
     height: auto;
 	display: block;
 	margin: auto;

@@ -13,7 +13,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #ff9c00;
+    background-color: #0f0;
     color: #ffffff;
     position: relative;
 }
@@ -227,7 +227,7 @@ h6 {
 }
 
 .navbar li + li {
-    margin-left: 2vmin;
+    margin-left: 2vw;
 }
 
 .navbar a {
@@ -235,7 +235,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'boxicons';
     font-size: calc(1vw + 1vmin + 3px);
     font-weight: 400;
     color: #000000;

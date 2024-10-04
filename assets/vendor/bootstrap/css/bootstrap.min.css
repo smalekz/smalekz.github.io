@@ -47,7 +47,7 @@
 body {
     margin: 0;
     font-family: var(--bs-font-sans-serif);
-    font-size: 1rem;
+    font-size: 1.5vw;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -600,9 +600,8 @@ progress {
 }
 
 .img-fluid {
-    max-width: 45%;
+    max-width: 60%;
     height: auto;
-	display: block;
 	margin: auto;
 }
 
@@ -664,7 +663,12 @@ progress {
     .container-md,
     .container-sm {
         max-width: 960px;
+        
     }
+}
+
+.container{
+    text-align: center;
 }
 
 @media (min-width:1200px){

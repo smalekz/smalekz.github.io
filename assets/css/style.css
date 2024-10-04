@@ -6,6 +6,11 @@
 /* --------------------------------------------------------------
 # General
 -------------------------------------------------------------- */
+@font-face {
+    font-family: "merri";
+    src: url(http://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nkD2ttfZwueP-QU272T9-k4.ttf);
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #ff9c00;
@@ -54,6 +59,7 @@ h6 {
     color: #77f;
     font-weight: 1000;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 /* --------------------------------------------------------------
@@ -63,7 +69,7 @@ h6 {
     transition: ease-in-out 0.3s;
     position: relative;
     height: 100vh;
-    display: flex;
+    display: block;
     align-items: center;
     z-index: 997;
     overflow-y: auto;
@@ -75,6 +81,7 @@ h6 {
 }
 
 #header h1 {
+    text-align: center;
     font-size: 48px;
     margin: 0;
     padding: 0;
@@ -88,6 +95,7 @@ h6 {
     color: #000000;
     line-height: 1;
     display: inline-block;
+    font-size: calc(3vw + 1vmin);
 }
 
 #header h2 {
@@ -104,13 +112,14 @@ h6 {
 
 #header img {
     padding: 0;
-    margin: 0;
+    margin: 20vh 0 0 0;
     max-width: 150px;
 }
 
 #header .social-links {
     margin-top: 40px;
     display: flex;
+    justify-content: center;
 }
 
 #header .social-links a {
@@ -146,9 +155,8 @@ h6 {
     }
 
     #header .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        text-align: center;
     }
 }
 
@@ -162,19 +170,20 @@ h6 {
     background: rgba(0, 0, 0, 0.9);
 }
 
-#header.header-top .social-links,
+#header.header-top .social-links, #header.header-top .iTyped,
 #header.header-top h2, #header.header-top img {
     display: none;
 }
 
 #header.header-top h1 {
     margin-right: auto;
-    font-size: 36px;
+    font-size: 4vw;
 }
 
 #header.header-top .container {
     display: flex;
     align-items: center;
+    margin-top: 2%;
 }
 
 #header.header-top .navbar {
@@ -200,6 +209,7 @@ h6 {
 .navbar {
     padding: 0;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .navbar ul {
@@ -215,7 +225,7 @@ h6 {
 }
 
 .navbar li + li {
-    margin-left: 30px;
+    margin-left: 2vw;
 }
 
 .navbar a {
@@ -224,7 +234,7 @@ h6 {
     justify-content: space-between;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 3vmin;
     font-weight: 400;
     color: #000000;
     white-space: nowrap;
@@ -369,6 +379,7 @@ section .container {
 }
 
 .section-title h2 {
+    text-align: left;
     font-size: 14px;
     font-weight: 500;
     padding: 0;
@@ -397,6 +408,7 @@ section .container {
     /*text-transform: uppercase;*/
     font-family: "Poppins", sans-serif;
     color: #fff;
+    text-align: left;
 }
 
 /* --------------------------------------------------------------
@@ -600,6 +612,7 @@ section .container {
     border-radius: 6px;
     position: relative;
     z-index: 1;
+    font-size: 2vmin;
 }
 
 .testimonials .swiper-pagination {
@@ -1021,6 +1034,7 @@ section .container {
     line-height: 24px;
     font-size: 14px;
     margin: 0 0 0 68px;
+    text-align: left;
 }
 
 .contact .info-box .social-links {

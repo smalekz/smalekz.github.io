@@ -114,6 +114,8 @@ h6 {
     padding: 0;
     margin: 20vh 0 0 0;
     max-width: 150px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
 }
 
 #header .social-links {

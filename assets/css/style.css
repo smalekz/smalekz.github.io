@@ -136,6 +136,7 @@ h6 {
     border-radius: 40%;
     width: 7vmin;
     height: 7vmin;
+    background-color: #0f05;
 }
 
 #header .social-links a:hover {

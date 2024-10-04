@@ -87,7 +87,7 @@ h6 {
     padding: 0;
     line-height: 1;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 #header h1 a,
@@ -95,7 +95,7 @@ h6 {
     color: #000000;
     line-height: 1;
     display: inline-block;
-    font-size: calc(3vw + 1vmin);
+    font-size: calc(0.5vw + 4.5vmin);;
 }
 
 #header h2 {
@@ -123,7 +123,7 @@ h6 {
 }
 
 #header .social-links a {
-    font-size: 20px;
+    font-size: 3vmin;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,8 +132,8 @@ h6 {
     line-height: 1;
     margin-right: 8px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 7vmin;
+    height: 7vmin;
 }
 
 #header .social-links a:hover {
@@ -162,7 +162,7 @@ h6 {
 
 /* Header Top */
 #header.header-top {
-    height: 80px;
+    height: 10vmin;
     position: fixed;
     left: 0;
     top: 0;
@@ -193,7 +193,7 @@ h6 {
 
 @media (max-width: 768px) {
     #header.header-top {
-        height: 60px;
+        height: 10vmin;
     }
 
     #header.header-top h1 {
@@ -225,7 +225,7 @@ h6 {
 }
 
 .navbar li + li {
-    margin-left: 2vw;
+    margin-left: 2vmin;
 }
 
 .navbar a {
@@ -357,7 +357,7 @@ section {
 }
 
 section.section-show {
-    top: 100px;
+    top: 12vmin;
     bottom: auto;
     opacity: 1;
     padding-bottom: 45px;
@@ -370,11 +370,11 @@ section .container {
 
 @media (max-width: 768px) {
     section {
-        top: 120px;
+        top: 12vmin;
     }
 
     section.section-show {
-        top: 80px;
+        top: 12vmin;
     }
 }
 
@@ -612,7 +612,7 @@ section .container {
     border-radius: 6px;
     position: relative;
     z-index: 1;
-    font-size: 2vmin;
+    font-size: 14px;
 }
 
 .testimonials .swiper-pagination {

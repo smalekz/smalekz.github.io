@@ -284,7 +284,7 @@ h6 {
     font-size: calc(1vw + 1vmin + 7px);
     line-height: 0;
     margin-left: 5px;
-    margin-right: 1px;
+    margin-right: 0.5vmin;
 }
 
 .navbar a:before {

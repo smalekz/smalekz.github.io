@@ -11,6 +11,38 @@
     src: url(http://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nkD2ttfZwueP-QU272T9-k4.ttf);
 }
 
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0005;
+    min-width: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #5555;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+
+
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #0f0;
@@ -72,7 +104,7 @@ h6 {
     display: block;
     align-items: center;
     z-index: 997;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     background: rgb(0,0,0,0.8);
 }
 
@@ -95,7 +127,7 @@ h6 {
     color: #000000;
     line-height: 1;
     display: inline-block;
-    font-size: calc(2vw + 2vmin + 3px);
+    font-size: calc(1.5vw + 1.5vmin + 7px);
 }
 
 #header h2 {
@@ -185,6 +217,7 @@ h6 {
 
 #header.header-top .container {
     display: flex;
+    margin-bottom: 1%;
     align-items: center;
     margin-top: 1%;
 }
@@ -196,7 +229,7 @@ h6 {
 
 @media (max-width: 768px) {
     #header.header-top {
-        height: 10vmin;
+        height: auto;
     }
 
     #header.header-top h1 {
@@ -216,11 +249,14 @@ h6 {
 }
 
 .navbar ul {
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
     align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .navbar li {
@@ -228,7 +264,7 @@ h6 {
 }
 
 .navbar li + li {
-    margin-left: 2vw;
+    margin-left: 1vmin;
 }
 
 .navbar a {
@@ -237,24 +273,25 @@ h6 {
     justify-content: space-between;
     padding: 0;
     font-family: 'boxicons';
-    font-size: calc(1vw + 1vmin + 3px);
+    font-size: calc(0.5vw + 0.5vmin + 5px);
     font-weight: 400;
-    color: #000000;
+    color: #fff;
     white-space: nowrap;
     transition: 0.3s;
 }
 
 .navbar a i {
-    font-size: 12px;
+    font-size: calc(1vw + 1vmin + 7px);
     line-height: 0;
     margin-left: 5px;
+    margin-right: 1px;
 }
 
 .navbar a:before {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 0px;
     bottom: -4px;
     left: 0;
     background-color: #77f;
@@ -273,7 +310,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover > a {
-    color: #00771c;
+    color: #ff0;
 }
 
 /* *
@@ -368,7 +405,7 @@ section.section-show {
 
 section .container {
     background: rgba(0, 0, 0, 0.9);
-    padding: 30px;
+    padding: 5vmin;
 }
 
 @media (max-width: 768px) {
@@ -377,7 +414,7 @@ section .container {
     }
 
     section.section-show {
-        top: 12vmin;
+        top: 12vh;
     }
 }
 
@@ -406,7 +443,7 @@ section .container {
 .section-title p {
     margin: 0;
     margin: -15px 0 15px 0;
-    font-size: 14px;
+    font-size: calc(0.5vw + 0.5vmin + 7px);
     font-weight: 100;
     /*text-transform: uppercase;*/
     font-family: "Poppins", sans-serif;

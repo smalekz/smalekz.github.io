@@ -1089,7 +1089,7 @@ section .container {
 
 .contact .info-box .social-links a {
     font-size: calc(0.5vw + 0.5vmin + 5px);
-    margin-top: 5vmin;
+    margin-bottom: 5vmin;
     display: inline-block;
     color: #fff;
     line-height: 1;

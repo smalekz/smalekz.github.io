@@ -72,7 +72,7 @@ body::before {
 }
 
 a {
-    color: #fa0;
+    color: #0fa;
     text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
-    color: #77f;
+    color: #0d0;
     font-weight: 1000;
     margin-bottom: 30px;
     text-align: left;
@@ -314,7 +314,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar li:hover > a {
-    color: #ff0;
+    color: #0f0;
 }
 
 /* *
@@ -440,7 +440,7 @@ section .container {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #77f;
+    background: #0d0;
     margin: 4px 10px;
 }
 

@@ -1075,6 +1075,7 @@ section .container {
 .contact .info-box p {
     padding: 0;
     color: #fff;
+    font-family: 'Raleway';
     line-height: 24px;
     font-size: 14px;
     margin: 0 0 0 68px;
@@ -1088,6 +1089,7 @@ section .container {
 }
 
 .contact .info-box .social-links a {
+    font-family: 'Raleway';
     font-size: calc(0.2vw + 0.2vmin + 10px);
     margin-bottom: 5vmin;
     display: inline-block;

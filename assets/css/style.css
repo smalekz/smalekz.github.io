@@ -122,6 +122,10 @@ h6 {
     font-family: "Raleway", sans-serif;
 }
 
+#header span {
+    font-size: 3vmin;
+}
+
 #header h1 a,
 #header h1 a:hover {
     color: #000000;

@@ -19,7 +19,7 @@
   
 .dropdown {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
   
 .dropdown-content {
@@ -29,6 +29,12 @@
     min-width: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: 0px;
+    width: 7vmin;
+}
+
+svg{
+    width: 2vw;
 }
   
 .dropdown-content a {
@@ -127,7 +133,7 @@ h6 {
 }
 
 #header span {
-    font-size: calc(1vw + 1vmin + 5px);
+    font-size: calc(0.7vh + 0.7vmin + 7px);
 }
 
 #header h1 a,
@@ -152,8 +158,8 @@ h6 {
 
 #header img {
     padding: 0;
-    margin: 20vh 0 0 0;
-    max-width: calc(12vw + 12vmin + 48px);
+    margin: 15vh 0 0 0;
+    max-width: calc(10vh + 10vmin + 50px);
     border: 5px solid #ffffff;
     border-radius: 50%;
 }

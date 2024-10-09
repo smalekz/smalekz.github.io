@@ -72,7 +72,7 @@ body::before {
 }
 
 a {
-    color: #0fa;
+    color: #ddf;
     text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
-    color: #0d0;
+    color: rgb(255, 255, 255);
     font-weight: 1000;
     margin-bottom: 30px;
     text-align: left;
@@ -122,8 +122,12 @@ h6 {
     font-family: "Raleway", sans-serif;
 }
 
+#header.header-top h1 a {
+    font-size: calc(1vw + 1vmin + 20px) !important;
+}
+
 #header span {
-    font-size: 3vmin;
+    font-size: calc(1vw + 1vmin + 5px);
 }
 
 #header h1 a,
@@ -131,7 +135,7 @@ h6 {
     color: #000000;
     line-height: 1;
     display: inline-block;
-    font-size: calc(1.5vw + 1.5vmin + 7px);
+    font-size: calc(1vw + 1vmin + 20px);
 }
 
 #header h2 {
@@ -149,7 +153,7 @@ h6 {
 #header img {
     padding: 0;
     margin: 20vh 0 0 0;
-    max-width: 150px;
+    max-width: calc(12vw + 12vmin + 48px);
     border: 5px solid #ffffff;
     border-radius: 50%;
 }
@@ -161,17 +165,17 @@ h6 {
 }
 
 #header .social-links a {
-    font-size: 3vmin;
+    font-size: calc(0.5vw + 0.5vmin + 15px);
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     line-height: 1;
-    margin-right: 8px;
+    margin-right: 2vmin;
     border-radius: 40%;
-    width: 7vmin;
-    height: 7vmin;
+    width: calc(1vw + 1vmin + 30px);
+    height: calc(1vw + 1vmin + 30px);
     background-color: #0f05;
 }
 
@@ -277,15 +281,19 @@ h6 {
     justify-content: space-between;
     padding: 0;
     font-family: 'Raleway';
-    font-size: calc(0.5vw + 0.5vmin + 5px);
+    font-size: calc(0.5vw + 0.5vmin + 10px);
     font-weight: 400;
     color: #fff;
     white-space: nowrap;
     transition: 0.3s;
 }
 
+.header-top .navbar a {
+    font-size: calc(0.5vw + 0.5vmin + 10px) !important;
+}
+
 .navbar a i {
-    font-size: calc(1vw + 1vmin + 7px);
+    font-size: calc(0.5vw + 0.5vmin + 15px);
     line-height: 0;
     margin-left: 5px;
     margin-right: 0.5vmin;
@@ -454,7 +462,7 @@ section .container {
     font-weight: 100;
     /*text-transform: uppercase;*/
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: #ddd;
     text-align: left;
 }
 

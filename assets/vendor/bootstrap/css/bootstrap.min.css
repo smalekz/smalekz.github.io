@@ -642,14 +642,14 @@ progress {
     margin-left: auto;
 }
 
-@media (min-width:576px){
+/* @media (min-width:576px){
     .container,
     .container-sm {
         max-width: 540px;
     }
-}
+} */
 
-@media (min-width:768px){
+@media (min-width:1000px){
     .container,
     .container-md,
     .container-sm {
@@ -1133,7 +1133,7 @@ progress {
     }
 }
 
-@media (min-width:768px){
+@media (min-width:1000px){
     .col-md {
         flex: 1 0 0%;
     }
@@ -8907,7 +8907,7 @@ fieldset:disabled .btn {
     }
 }
 
-@media (min-width:768px){
+@media (min-width:1000px){
     .float-md-start {
         float: left!important;
     }

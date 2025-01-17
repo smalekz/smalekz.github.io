@@ -284,7 +284,6 @@ h6 {
 .navbar a {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0;
     font-family: 'Raleway';
     font-size: calc(0.5vw + 0.5vmin + 5px);

@@ -1,0 +1,27 @@
+from google.genai import types
+import glob as glob
+from google import genai
+import io
+import pathlib
+import httpx
+import os
+
+pl = glob.glob("/articles/*.pdf")
+
+from google.colab import userdata
+key = userdata.get('GOOGLE_API_KEY')
+
+client = genai.Client(api_key=key)
+n=0
+fl = []
+for i in pl:
+  if os.path.getsize(i)<6000000:
+    filepath = pathlib.Path(i)
+    x = client.files.upload(file=filepath)
+    fl.append(x)
+
+prompt = """
+فرض کن مسئول بازاریابی شرکت تولید تراکتور هستی و با خوندن این فایل های مقالات همه عوامل غیرتکراری مربوط به کشاورز و همچنین غیرمربوط به کشاورز موثر بر کاهش و افزایش فروش تراکتور را دقیق و جزئی و خلاصه و با توضیح مفهوم عوامل نام ببر و حتی توضیحات اولیه خودت رو هم ننویس و بدون هر گونه نشانه گذاری بنویس و اصلا از عوامل دارای کلمات تغییرات و هزینه و دسترسی و میزان استفاده و نوع و سیستم در جوابت استفاده نکن و یک عامل را بیش از یک بار ذکر نکن و از تکرار عوامل پرهیز کن و عوامل تکراری را ننویس
+"""
+
+fl.append(prompt)

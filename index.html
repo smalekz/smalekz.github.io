@@ -22,7 +22,69 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
-		
+		<script>
+        import { Pane } from "https://esm.sh/tweakpane@4.0.3";
+
+        const state = {
+        fps: 30,
+        color: "#0f0",
+        charset: "01",
+        size: 25
+        };
+
+        const gui = new Pane({
+        title: "1337 Matrix by pavi2410"
+        });
+        const fpsCtrl = gui.addBinding(state, "fps", { min: 1, max: 120, step: 1 });
+        gui.addBinding(state, "color");
+        gui.addBinding(state, "charset");
+        const sizeCtrl = gui.addBinding(state, "size", { min: 1, max: 120, step: 1 });
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        let w, h, p;
+        const resize = () => {
+        w = canvas.width = innerWidth;
+        h = canvas.height = innerHeight;
+
+        p = Array(Math.ceil(w / state.size)).fill(0);
+        };
+        window.addEventListener("resize", resize);
+        sizeCtrl.on("change", (ev) => {
+        if (ev.last) {
+            resize();
+        }
+        });
+        resize();
+
+        const random = (items) => items[Math.floor(Math.random() * items.length)];
+
+        const draw = () => {
+        ctx.fillStyle = "rgba(0,0,0,.05)";
+        ctx.fillRect(0, 0, w, h);
+        ctx.fillStyle = state.color;
+
+        ctx.font = state.size + "px monospace";
+        for (let i = 0; i < p.length; i++) {
+            let v = p[i];
+            ctx.fillText(random(state.charset), i * state.size, v);
+            p[i] = v >= h || v >= 10000 * Math.random() ? 0 : v + state.size;
+        }
+        };
+
+        let interval = setInterval(draw, 1000 / state.fps);
+        fpsCtrl.on("change", (ev) => {
+        if (!ev.last) return;
+        const fps = ev.value;
+        if (interval) {
+            clearInterval(interval);
+        }
+        interval = setInterval(draw, 1000 / fps);
+        });
+
+        </script>
+        
 		<script type="application/ld+json">
 		{
 		"@context": "http://schema.org/",
@@ -31,7 +93,7 @@
 		"url": "https://smalekz.github.io",
 		"logo": "https://smalekz.github.io/avatar.jpg", 
 		"image": "https://smalekz.github.io/avatar.jpg",
-		"telephone": "+994 50 887 9893",
+		"telephone": "+989142232172",
 		"email": "mailto:smalekzp@gmail.com",
 		"@id": "https://smalekz.github.io",
 		"openingHoursSpecification": [
@@ -65,10 +127,10 @@
 			
 		 "address": {
 		  "@type": "PostalAddress",
-		  "streetAddress": "Svetlana Memmedova",
-		  "addressLocality": "Baku",
-		  "postalCode": "AZ 1114",
-		  "addressCountry": "AZ"
+		  "streetAddress": "Etesami",
+		  "addressLocality": "Tabriz",
+		  "postalCode": "5157",
+		  "addressCountry": "IR"
 		 },
 		  
 		  "aggregateRating": {
@@ -109,19 +171,20 @@
   * Author: Saber Malekzadeh
   * License: smalek.ml
   ======================================================== -->         
-    <style id="__web-inspector-hide-shortcut-style__">
+    <!-- <style id="__web-inspector-hide-shortcut-style__">
 .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after
 {
     visibility: hidden !important;
 }
 
-:root a[href^="http://latestdownloads.net/download.php?"], :root a[href*="//bongacams2.com/track?"], :root #center_col > #resultStats + #tads + #res + #tads, :root a[href^="//z6naousb.com/"], :root a[href^="https://reachtrgt.com/"], :root div[class^="Ad__container"], :root a[href^="http://adprovider.adlure.net/"], :root div[id^="adspot-"], :root #\5f _admvnlb_modal_container, :root [data-freestar-ad], :root a[href^="http://rs-stripe.wsj.com/stripe/redirect"], :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root a[href^="http://ad.yieldmanager.com/"], :root a[href^="http://www.plus500.com/?id="], :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root a[href^="https://syndication.dynsrvtbg.com/splash.php?"] { display: none !important; }</style><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>     
-    <body ccid="1833">    
+:root a[href^="http://latestdownloads.net/download.php?"], :root a[href*="//bongacams2.com/track?"], :root #center_col > #resultStats + #tads + #res + #tads, :root a[href^="//z6naousb.com/"], :root a[href^="https://reachtrgt.com/"], :root div[class^="Ad__container"], :root a[href^="http://adprovider.adlure.net/"], :root div[id^="adspot-"], :root #\5f _admvnlb_modal_container, :root [data-freestar-ad], :root a[href^="http://rs-stripe.wsj.com/stripe/redirect"], :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root a[href^="http://ad.yieldmanager.com/"], :root a[href^="http://www.plus500.com/?id="], :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root a[href^="https://syndication.dynsrvtbg.com/splash.php?"] { display: none !important; }</style><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script> -->
+
+</head>     
+    <body ccid="1833" style="margin: 0;overflow: hidden;">  
+        <canvas id="canvas"> 
         <!-- ======= Header ======= -->         
         <header ccid="1900" id="header" class=""> 
-            <div ccid="1935" class="container" style="
-    max-height: 100%;font-family: cursive;
-">
+            <div ccid="1935" class="container" style="max-height: 100%;font-family: cursive;">
                  
                 <a href="index.html" class="mr-auto"><img src="avatar.jpg" alt="" class="img-fluid" style="
     margin-bottom: 20px;
@@ -759,4 +822,4 @@
         <script ccid="49960" src="assets/js/main.js"></script>        
          
 
-</body></html>
+    </canvas></body></html>

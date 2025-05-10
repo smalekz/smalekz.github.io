@@ -1,199 +1,163 @@
+'use strict';
 
-// Preloader
 
-window.addEventListener('load', function(){
-    document.querySelector('.preloader').classList.add('opacity-0');
-    setTimeout(function(){
-        document.querySelector('.preloader').style.display = 'none';
-    }, 1000);
-});
 
-// iTyped 
+// element toggle function
+const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-window.ityped.init(document.querySelector('.iTyped'), {
-    strings: ["Data Scientist", 'AI & Big Data Researcher'],
-    loop: true
-});
 
-ityped.init('#typed-text', {
-    strings: ['Tehran 60 years ago...', 'A bustling metropolis with a rich history.'],
-    typeSpeed: 100,  // Adjust typing speed (characters per second)
-    backSpeed: 50,   // Adjust backspace speed
-    loop: true,     // Set to true for continuous animation
-    placeholder: false,
-    showCursor: false
+
+// sidebar variables
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+
+// sidebar toggle functionality for mobile
+sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// testimonials variables
+const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
+
+// modal variable
+const modalImg = document.querySelector("[data-modal-img]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalTitles = document.querySelector("[data-modal-titles]");
+const modalTime = document.querySelector("[data-modal-time]");
+const modalText = document.querySelector("[data-modal-text]");
+
+// modal toggle function
+const testimonialsModalFunc = function () {
+  modalContainer.classList.toggle("active");
+  overlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < testimonialsItem.length; i++) {
+
+  testimonialsItem[i].addEventListener("click", function () {
+
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalTitles.innerHTML = this.querySelector("[data-testimonials-titles]").innerHTML;
+    modalTime.innerHTML = this.querySelector("[data-testimonials-time]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+
+    testimonialsModalFunc();
+
   });
 
-// Portfolio Item Filter
+}
 
-const filterContainer = document.querySelector('.portfolio-filter'),
-    filterBtns = filterContainer.children,
-    totalFilterBtn = filterBtns.length,
-    portfolioItems = document.querySelectorAll('.portfolio-item'),
-    totalPortfolioItem = portfolioItems.length;
-    
-    for (let i = 0; i < totalFilterBtn; i++) {
-        filterBtns[i].addEventListener("click", function(){
-            filterContainer.querySelector('.active').classList.remove('active');
-            this.classList.add("active");
+// add click event to modal close button
+modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+overlay.addEventListener("click", testimonialsModalFunc);
 
-            const filterValue = this.getAttribute('data-filter');
-            for (let k = 0; k < totalPortfolioItem; k++) {
-                if (filterValue === portfolioItems[k].getAttribute('data-category')) {
-                    portfolioItems[k].classList.remove('hide');
-                    portfolioItems[k].classList.add('show');
-                } else{
-                    portfolioItems[k].classList.remove('show');
-                    portfolioItems[k].classList.add('hide');
-                }
-                if (filterValue === 'all') {
-                    portfolioItems[k].classList.remove('hide');
-                    portfolioItems[k].classList.add('show');
-                }
-            }
-        });
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// custom select variables
+// const select = document.querySelector("[data-select]");
+// const selectItems = document.querySelectorAll("[data-select-item]");
+// const selectValue = document.querySelector("[data-selecct-value]");
+// const filterBtn = document.querySelectorAll("[data-filter-btn]");
+
+// select.addEventListener("click", function () { elementToggleFunc(this); });
+
+// // add event in all select items
+// for (let i = 0; i < selectItems.length; i++) {
+//   selectItems[i].addEventListener("click", function () {
+
+//     let selectedValue = this.innerText.toLowerCase();
+//     selectValue.innerText = this.innerText;
+//     elementToggleFunc(select);
+//     filterFunc(selectedValue);
+
+//   });
+// }
+
+// filter variables
+// const filterItems = document.querySelectorAll("[data-filter-item]");
+
+// const filterFunc = function (selectedValue) {
+
+//   for (let i = 0; i < filterItems.length; i++) {
+
+//     if (selectedValue === "all") {
+//       filterItems[i].classList.add("active");
+//     } else if (selectedValue === filterItems[i].dataset.category) {
+//       filterItems[i].classList.add("active");
+//     } else {
+//       filterItems[i].classList.remove("active");
+//     }
+
+//   }
+
+// }
+
+// add event in all filter button items for large screen
+// let lastClickedBtn = filterBtn[0];
+
+// for (let i = 0; i < filterBtn.length; i++) {
+
+//   filterBtn[i].addEventListener("click", function () {
+
+//     let selectedValue = this.innerText.toLowerCase();
+//     selectValue.innerText = this.innerText;
+//     filterFunc(selectedValue);
+
+//     lastClickedBtn.classList.remove("active");
+//     this.classList.add("active");
+//     lastClickedBtn = this;
+
+//   });
+
+// }
+
+
+
+// contact form variables
+// const form = document.querySelector("[data-form]");
+// const formInputs = document.querySelectorAll("[data-form-input]");
+// const formBtn = document.querySelector("[data-form-btn]");
+
+// // add event to all form input field
+// for (let i = 0; i < formInputs.length; i++) {
+//   formInputs[i].addEventListener("input", function () {
+
+//     // check form validation
+//     if (form.checkValidity()) {
+//       formBtn.removeAttribute("disabled");
+//     } else {
+//       formBtn.setAttribute("disabled", "");
+//     }
+
+//   });
+// }
+
+
+
+// page navigation variables
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+// add event to all nav link
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener("click", function () {
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
     }
 
-// Portfolio Lighbox
-
-const lightbox = document.querySelector('.lightbox'),
-    lightboxImg = lightbox.querySelector('.lightbox-img'),
-    lightboxText = lightbox.querySelector('.caption-text'),
-    lightboxClose = lightbox.querySelector('.lightbox-close'),
-    lightboxCounter = lightbox.querySelector('.caption-counter');
-
-let itemIndex = 0;
-
-for (let i = 0; i < totalPortfolioItem; i++) {
-    portfolioItems[i].addEventListener('click', function(){
-        itemIndex = i;
-        changeItem();
-        toggleLightbox();
-    });
-}
-
-function toggleLightbox() {
-    lightbox.classList.toggle('open');
-}
-
-function changeItem() {
-    let imgSrc = portfolioItems[itemIndex].querySelector('.portfolio-img img').getAttribute('src');
-    lightboxImg.src = imgSrc;
-    lightboxText.innerHTML = portfolioItems[itemIndex].querySelector('h4').innerHTML;
-    lightboxCounter.innerHTML = (itemIndex + 1) + " of " + totalPortfolioItem;
-}
-
-function prevItem() {
-    if (itemIndex === 0) {
-        itemIndex = totalPortfolioItem - 1;
-    } else {
-        itemIndex--;
-    }
-    changeItem();
-}
-
-function nextItem() {
-    if (itemIndex === totalPortfolioItem - 1) {
-        itemIndex = 0;
-    } else {
-        itemIndex++;
-    }
-    changeItem();
-}
-
-// close lightbox
-
-lightbox.addEventListener('click', function(event){
-    if(event.target === lightboxClose || event.target === lightbox){
-        toggleLightbox();
-    }
-});
-
-// Aside Navbar
-
-const nav = document.querySelector('.nav'),
-    navList = nav.querySelectorAll('li'),
-    totalNavList = navList.length,
-    allSection = document.querySelectorAll('.section'),
-    totalSection = allSection.length;
-
-for (let i = 0; i < totalNavList; i++) {
-    const a = navList[i].querySelector('a');
-    a.addEventListener('click', function(){
-        // remove back section class
-        removeBackSectionClass();
-
-        for (let j = 0; j < totalNavList; j++) {
-            if (navList[j].querySelector('a').classList.contains('active')) {
-                // add back section class
-                addBackSectionClass(j);
-            }
-            navList[j].querySelector('a').classList.remove('active');
-        }
-
-        this.classList.add('active');
-
-        showSection(this);
-
-        if (window.innerWidth < 1200) {
-            asideSectionTogglerBtn();
-        }
-
-    });
-}
-
-function addBackSectionClass(num) 
-{
-    allSection[num].classList.add('back-section');
-}
-
-function removeBackSectionClass() 
-{
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.remove('back-section');
-    }
-}
-
-function updateNav(element) 
-{
-    for (let i = 0; i < totalNavList; i++) {
-        navList[i].querySelector('a').classList.remove('active');
-        const target = element.getAttribute('href').split('#')[1];
-        if (target === navList[i].querySelector('a').getAttribute('href').split('#')[1]) {
-            navList[i].querySelector('a').classList.add('active');
-        }
-    }
-}
-
-document.querySelector('.hire-me').addEventListener('click', function(){
-    const sectionIndex = this.getAttribute('data-section-index');
-    addBackSectionClass(sectionIndex);
-    showSection(this);
-    updateNav(this);
-    removeBackSectionClass();
-});
-
-function showSection(element) 
-{
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.remove('active');
-    }
-
-    const target = element.getAttribute('href').split('#')[1];
-
-    document.querySelector('#'+target).classList.add('active');
-}
-
-const navTogglerBtn = document.querySelector('.nav-toggler'),
-    aside = document.querySelector('.aside');
-
-navTogglerBtn.addEventListener('click', asideSectionTogglerBtn);
-
-function asideSectionTogglerBtn() 
-{
-    aside.classList.toggle('open');
-    navTogglerBtn.classList.toggle('open');
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.toggle('open');
-    }
+  });
 }

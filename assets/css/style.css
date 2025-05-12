@@ -589,9 +589,15 @@ main {
  * #service 
  */
 
+.service ion-icon{
+  font-size: 40px;
+  color: var(--orange-yellow-crayola);
+  margin: auto;
+}
+
 .service { margin-bottom: 35px; }
 
-.service-title { margin-bottom: 20px; }
+.service-title { margin-bottom: 20px; margin-top: 50px;}
 
 .service-list {
   display: grid;
@@ -1522,6 +1528,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 0;
     margin-top: 5px;
   }
+
+  .fa .service-content-box { text-align: right; }
 
   .service-content-box { text-align: left; }
 

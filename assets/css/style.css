@@ -158,6 +158,23 @@
   border-radius: 20px;
 }
 
+h1 { font-size: var(--fs-0); }
+
+.blogimg {
+  float: left;
+  width: 200px !important;
+  margin: 20px;
+}
+
+.blog-posts p {
+  font-size: var(--fs-4);
+}
+
+.blog-posts .title {
+  font-size: var(--fs-6);
+  margin-bottom: 20px;
+}
+
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -271,6 +288,18 @@ article.active {
   color: var(--white-2);
   text-transform: capitalize;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+
+.h1 { font-size: var(--fs-0); }
 
 .h2 { font-size: var(--fs-1); }
 
@@ -1388,6 +1417,7 @@ textarea.form-input::-webkit-resizer { display: none; }
      * typography
      */
 
+    --fs-0: 32px;
     --fs-1: 28px;
     --fs-2: 20px;
     --fs-3: 22px;

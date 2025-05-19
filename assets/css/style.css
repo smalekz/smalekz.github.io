@@ -154,6 +154,9 @@
   margin-bottom: 5px;
 }
 
+.avatar-box img {
+  border-radius: 20px;
+}
 
 /*-----------------------------------*\
   #RESET

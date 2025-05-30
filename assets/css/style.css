@@ -78,6 +78,7 @@ article {
     --light-gray-70: hsla(0, 0%, 84%, 0.7);
     --bittersweet-shimmer: hsl(0, 43%, 51%);
     --ff-poppins: 'Poppins', sans-serif;
+    --fs-0: 25px;
     --fs-1: 20px;
     --fs-2: 16px;
     --fs-3: 15px;
@@ -409,7 +410,7 @@ main {
 
 .info-content .name {
     color: var(--white-2);
-    font-size: var(--fs-3);
+    font-size: var(--fs-0);
     letter-spacing: -.25px;
     margin-bottom: 5px
 }
@@ -418,7 +419,7 @@ main {
 .info-content .title,
 .info_more-btn,
 .navbar-link {
-    font-size: var(--fs-8)
+    font-size: var(--fs-6)
 }
 
 .about-text,

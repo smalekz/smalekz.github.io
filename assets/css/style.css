@@ -232,7 +232,8 @@ html {
 }
 
 body {
-    background-image: url(../images/bp.jpg), linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85));
+    background-image: url(../images/bp.webp), linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85));
+    /* background-size: 100px; */
     background-blend-mode: overlay
 }
 

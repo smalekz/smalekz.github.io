@@ -45,6 +45,16 @@ article {
     grid-template-columns: 1fr
 }
 
+.sidebar img {
+    width: 80px;
+    height: auto;
+}
+
+img {
+    height: auto;
+    border-radius: 20px;
+}
+
 :root {
     --bg-gradient-onyx: linear-gradient(to bottom right,
             hsl(240, 1%, 25%) 3%,
@@ -688,7 +698,7 @@ main {
     left: 0;
     transform: translate(15px, -25px);
     background: var(--bg-gradient-onyx);
-    border-radius: 14px;
+    border-radius: 20px;
     box-shadow: var(--shadow-1)
 }
 
@@ -784,7 +794,7 @@ main {
 .modal-avatar-box {
     background: var(--bg-gradient-onyx);
     width: max-content;
-    border-radius: 14px;
+    border-radius: 20px;
     margin-bottom: 15px;
     box-shadow: var(--shadow-2)
 }
@@ -1774,7 +1784,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     .avatar-box img {
-        width: 150px;
+        width: 180px;
         border-radius: 20px
     }
 

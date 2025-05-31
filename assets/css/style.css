@@ -4,6 +4,10 @@ article {
     box-shadow: var(--shadow-1)
 }
 
+.sidebar .name {
+    font-size: var(--fs-1) !important;
+}
+
 .icon-box,
 .sidebar-info {
     position: relative;
@@ -430,7 +434,7 @@ main {
 .info-content .title,
 .info_more-btn,
 .navbar-link {
-    font-size: var(--fs-6)
+    font-size: var(--fs-4)
 }
 
 .about-text,
@@ -579,12 +583,14 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 0 10px
+    padding: 0 10px;
+    gap: 1vw;
 }
 
 .navbar-link {
     padding: 20px 7px;
-    transition: color var(--transition-1)
+    transition: color var(--transition-1);
+    font-size: 1em;
 }
 
 .about-text,
@@ -613,7 +619,8 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 40px
+    gap: 40px;
+    padding-top: 20px;
 }
 
 .service ion-icon {
@@ -1285,8 +1292,8 @@ textarea.form-input::-webkit-resizer {
     :root {
         --fs-0: 32px;
         --fs-1: 28px;
-        --fs-2: 20px;
-        --fs-3: 22px;
+        --fs-2: 22px;
+        --fs-3: 18px;
         --fs-4: 15px;
         --fs-6: 12px;
         --fs-7: 12px;
@@ -1337,7 +1344,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     .sidebar-info {
-        gap: 25px
+        gap: 20px
     }
 
     .avatar-box {
@@ -1776,7 +1783,7 @@ textarea.form-input::-webkit-resizer {
         max-height: max-content;
         height: 100%;
         margin-bottom: 0;
-        padding-top: 60px;
+        padding-top: 40px;
         z-index: 1
     }
 
@@ -1785,7 +1792,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     .avatar-box img {
-        width: 180px;
+        width: 150px;
         border-radius: 20px
     }
 

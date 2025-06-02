@@ -590,7 +590,7 @@ main {
 .navbar-link {
     padding: 20px 7px;
     transition: color var(--transition-1);
-    font-size: 0.85em;
+    font-size: calc(0.25vw + 10px);
 }
 
 .about-text,

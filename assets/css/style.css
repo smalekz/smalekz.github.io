@@ -130,12 +130,12 @@ img {
 }
 
 .fa .honors .timeline-item h4 {
-    font-size: 11px
+    font-size: calc(0.25vw + 10px);
 }
 
 .timeline-item h4 {
     display: ruby;
-    font-size: 12px
+    font-size: calc(0.25vw + 12px);
 }
 
 .timeline-item a {
@@ -144,7 +144,7 @@ img {
 }
 
 .timeline-item {
-    font-size: 12px !important
+    font-size: calc(0.25vw + 11px) !important
 }
 
 .honors li:not(:last-child) {
@@ -590,7 +590,7 @@ main {
 .navbar-link {
     padding: 20px 7px;
     transition: color var(--transition-1);
-    font-size: 1em;
+    font-size: 0.85em;
 }
 
 .about-text,

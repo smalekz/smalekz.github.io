@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     /**
      * Fetches an HTML file, parses it, and extracts specific elements.
      * @param {string} url The URL of the HTML file to fetch.
-     * @returns {Promise<Object|null>} An object containing extracted data (title, excerpt) or null on error.
+     * @returns {Promise<Object|null>} An object containing extracted data (title, excerpt, imageUrl) or null on error.
      */
     async function fetchAndParsePost(url) {
         try {
@@ -50,14 +50,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             const titleElement = doc.querySelector('.full-post-title');
             const excerptElement = doc.querySelector('.full-post-excerpt');
+            const imageElement = doc.querySelector('.full-post-image'); // اضافه شدن: انتخابگر تصویر
 
             const title = titleElement ? titleElement.textContent : 'عنوان نامشخص (یافت نشد)';
             const excerpt = excerptElement ? excerptElement.textContent : 'خلاصه محتوا در دسترس نیست (یافت نشد).';
+            const imageUrl = imageElement ? imageElement.src : 'https://placehold.co/300x200/cccccc/000000?text=تصویر+پست'; // اضافه شدن: آدرس تصویر یا تصویر پیش‌فرض
 
             if (!titleElement) console.warn(`Warning: '.full-post-title' not found in ${url}`);
             if (!excerptElement) console.warn(`Warning: '.full-post-excerpt' not found in ${url}`);
+            if (!imageElement) console.warn(`Warning: '.full-post-image' not found in ${url}, using placeholder.`);
 
-            return { title, excerpt };
+            return { title, excerpt, imageUrl }; // اضافه شدن: imageUrl
 
         } catch (error) {
             console.error(`Error processing post ${url}:`, error);
@@ -67,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     /**
      * Creates a post card HTML element.
-     * @param {Object} postData The data for the post (title, excerpt).
+     * @param {Object} postData The data for the post (title, excerpt, imageUrl).
      * @param {string} postUrl The URL to the full post HTML file.
      * @returns {HTMLElement} The created article element.
      */
@@ -80,6 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="post-header-content">
                 <h2 class="post-title">${postData.title}</h2>
             </div>
+            <img src="${postData.imageUrl}" alt="تصویر پست" class="post-card-image">
             <div class="post-body-content">
                 <p class="post-excerpt">${postData.excerpt}</p>
             </div>

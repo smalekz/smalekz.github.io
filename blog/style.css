@@ -147,6 +147,15 @@ body {
 .post-header-content {
     padding: 1rem 1.5rem 0.5rem; /* پدینگ بالا، چپ/راست، پایین */
     text-align: center; /* وسط چین کردن عنوان */
+    background: yellow;
+}
+
+/* استایل برای تصویر در کارت پست (صفحه اصلی) */
+.post-card-image {
+    width: 100%;
+    height: 200px; /* ارتفاع ثابت برای تصاویر در کارت‌ها */
+    object-fit: cover; /* اطمینان از پر شدن فضا بدون کشیدگی */
+    /* margin-bottom: 1rem; فاصله از متن */
 }
 
 /* استایل برای محتوای اصلی پست (شامل خلاصه) */
@@ -161,14 +170,15 @@ body {
 .post-title {
     font-size: 1.4rem; /* فونت کوچکتر برای عنوان */
     font-weight: 700;
-    color: #333333;
+    color: #111;
     margin: 0; /* margin از طریق post-header-content مدیریت می‌شود */
 }
 
 .post-excerpt {
     font-size: 0.95rem; /* فونت کوچکتر برای توضیحات */
-    color: #666666;
+    color: #222;
     line-height: 1.6;
+    margin-top: 0;
     margin-bottom: 0; /* حذف margin-bottom زیرا دکمه ادامه مطلب حذف شده است */
     flex-grow: 1; /* اجازه رشد برای متن خلاصه */
     text-align: justify; /* تراز متن به صورت justify در صفحه اصلی */
@@ -191,6 +201,16 @@ body {
     margin-top: 0; /* اطمینان از حذف margin-top پیش‌فرض مرورگر */
     margin-bottom: 1.5rem; /* فاصله‌ی مناسب بعد از عنوان */
     /* این عنوان در داخل .full-post-container قرار دارد و پدینگ 2.5rem را از آن به ارث می‌برد */
+}
+
+/* استایل برای تصویر در صفحه کامل پست */
+.full-post-image {
+    display: block; /* برای اینکه margin auto کار کند */
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto; /* مرکز قرار گرفتن تصویر و فاصله از بالا و پایین */
+    border-radius: 0.5rem; /* گوشه‌های گرد برای تصویر */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* استایل برای خلاصه و تمام پاراگراف‌های داخل full-post-container */

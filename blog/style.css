@@ -1,0 +1,500 @@
+/* تنظیمات عمومی */
+body {
+    font-family: 'Vazirmatn', 'Inter', sans-serif; /* استفاده از فونت Vazirmatn، سپس Inter و در نهایت sans-serif */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 30, 20); /* تغییر رنگ پس‌زمینه به rgb(10, 30, 20) */
+    direction: rtl; /* جهت‌دهی راست به چپ برای زبان فارسی */
+    text-align: right; /* تراز متن به راست */
+    /* اضافه کردن box-sizing برای همه عناصر برای اطمینان از محاسبات درست عرض و پدینگ */
+    box-sizing: border-box;
+}
+
+/* اطمینان از اعمال box-sizing به همه عناصر */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* استایل هدر */
+.header {
+    background-color: rgb(10, 50, 40); /* تغییر رنگ به rgb(10, 50, 40) */
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between; /* توزیع فضا بین عناصر */
+    align-items: center; /* تراز عمودی عناصر */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* سایه کوچک */
+    position: relative; /* برای موقعیت‌دهی مطلق منوها و دکمه‌ها در موبایل */
+}
+
+.site-title {
+    /* margin: 0 auto; در Media Query های تبلت/لپ‌تاپ تنظیم می‌شود */
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* استایل منوی سمت چپ (نمایش در دسکتاپ/تبلت) */
+.nav-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* فاصله بین آیتم‌های منو */
+}
+
+.nav-left a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+    color: #e0e0e0;
+}
+
+/* استایل برای آیتم فعال در منوی ناوبری */
+.nav-left a.active-menu-item {
+    color: yellow; /* رنگ زرد برای آیتم فعال */
+}
+
+/* استایل آیکون‌های شبکه‌های اجتماعی (نمایش در دسکتاپ/تبلت) */
+.social-icons {
+    display: flex;
+    gap: 1.5rem; /* فاصله بین آیکون‌ها */
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* افکت بزرگنمایی هنگام هاور */
+}
+
+/* استایل دکمه همبرگر (مخفی در دسکتاپ/تبلت) */
+.hamburger-icon {
+    display: none; /* پیش‌فرض مخفی */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem; /* پدینگ برای فاصله از لبه‌ها */
+    z-index: 1001; /* اطمینان از قرارگیری بالای عناصر دیگر */
+    line-height: 1; /* Helps vertical centering of the icon */
+    position: absolute; /* موقعیت‌یابی مطلق نسبت به هدر */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-hamburger-toggle {
+    left: 1.5rem; /* موقعیت دکمه منوی ناوبری */
+}
+
+.social-hamburger-toggle {
+    right: 1.5rem; /* موقعیت دکمه شبکه‌های اجتماعی */
+}
+
+/* استایل کانتینر اصلی محتوا */
+.container {
+    padding: 2rem 1rem; /* پدینگ برای کانتینر */
+    max-width: 1200px; /* حداکثر عرض برای دسکتاپ */
+    margin: 0 auto; /* مرکز قرار گرفتن کانتینر */
+    display: flex; /* برای قرار دادن دکمه بارگذاری در پایین */
+    flex-direction: column;
+    align-items: center; /* برای وسط چین کردن دکمه */
+}
+
+/* استایل شبکه پست‌ها (posts-grid) */
+.posts-grid {
+    position: relative; /* برای موقعیت‌دهی مطلق کارت‌ها */
+    padding: 0;
+    margin: 0 10%; /* ۲۰ درصد فاصله از راست و چپ برای حالت لپ‌تاپ (پیش‌فرض) */
+    min-height: 500px; /* یک ارتفاع اولیه برای جلوگیری از فروپاشی در لود اولیه */
+    /* display: grid و سایر ویژگی‌های grid حذف شدند تا Masonry JS کار کند */
+    width: 100%; /* برای اینکه Masonry JS بتواند عرض را محاسبه کند */
+    margin-bottom: 2rem; /* فاصله از دکمه بارگذاری بیشتر */
+}
+
+/* استایل کارت پست */
+.post-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem; /* گوشه‌های گرد */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه برای کارت */
+    overflow: hidden; /* جلوگیری از سرریز محتوا */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, top 0.4s ease, left 0.4s ease; /* افکت هاور و انتقال نرم برای Masonry */
+    cursor: pointer; /* اضافه شدن: نشانگر ماوس به حالت اشاره تغییر کند */
+
+    /* تنظیمات موقعیت‌دهی برای جاوااسکریپت */
+    position: absolute; /* بسیار مهم برای Masonry با JS */
+    width: calc(33.333% - 1rem); /* عرض پیش‌فرض برای ۳ ستون در لپ‌تاپ (حدود) */
+    box-sizing: border-box; /* padding و border در عرض لحاظ شوند */
+
+    display: flex;
+    flex-direction: column; /* چیدمان ستونی محتوا */
+}
+
+.post-card:hover {
+    transform: translateY(-5px); /* کمی بالا رفتن کارت هنگام هاور */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* سایه بیشتر */
+}
+
+/* استایل برای wrapper عنوان پست */
+.post-header-content {
+    padding: 1rem 1.5rem 0.5rem; /* پدینگ بالا، چپ/راست، پایین */
+    text-align: center; /* وسط چین کردن عنوان */
+}
+
+/* استایل برای محتوای اصلی پست (شامل خلاصه) */
+.post-body-content {
+    padding: 1.5rem;
+    flex-grow: 1; /* اجازه رشد به محتوا برای پر کردن فضای موجود */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* برای وسط‌چین کردن دکمه ادامه مطلب (که حذف شده) */
+}
+
+.post-title {
+    font-size: 1.4rem; /* فونت کوچکتر برای عنوان */
+    font-weight: 700;
+    color: #333333;
+    margin: 0; /* margin از طریق post-header-content مدیریت می‌شود */
+}
+
+.post-excerpt {
+    font-size: 0.95rem; /* فونت کوچکتر برای توضیحات */
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 0; /* حذف margin-bottom زیرا دکمه ادامه مطلب حذف شده است */
+    flex-grow: 1; /* اجازه رشد برای متن خلاصه */
+    text-align: justify; /* تراز متن به صورت justify در صفحه اصلی */
+}
+
+/* استایل برای صفحه کامل پست */
+.full-post-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    /* پدینگ کلی: بالا و پایین 2rem، چپ و راست 2.5rem برای فاصله از دیواره‌های کانتینر */
+    padding: 2rem 2.5rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-post-title {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-top: 0; /* اطمینان از حذف margin-top پیش‌فرض مرورگر */
+    margin-bottom: 1.5rem; /* فاصله‌ی مناسب بعد از عنوان */
+    /* این عنوان در داخل .full-post-container قرار دارد و پدینگ 2.5rem را از آن به ارث می‌برد */
+}
+
+/* استایل برای خلاصه و تمام پاراگراف‌های داخل full-post-container */
+.full-post-excerpt,
+.full-post-container p {
+    font-size: 1.1rem;
+    color: #444444;
+    line-height: 1.8;
+    margin-block-start: 0; /* حذف margin-top پیش‌فرض مرورگر (معادل margin-top در RTL) */
+    margin-block-end: 0; /* حذف margin-bottom پیش‌فرض مرورگر (معادل margin-bottom در RTL) */
+    text-align: justify; /* تراز متن به صورت justify در صفحه پست‌ها */
+    /* پدینگ داخلی پاراگراف‌ها - مقادیر برای دسکتاپ/لپ‌تاپ در Media Query تنظیم می‌شود */
+    padding-left: 2rem; /* پیش‌فرض برای لپ‌تاپ و بالاتر */
+    padding-right: 2rem; /* پیش‌فرض برای لپ‌تاپ و بالاتر */
+}
+
+
+/* استایل دکمه بارگذاری بیشتر */
+.load-more-button {
+    background-color: rgb(10, 50, 40); /* تغییر رنگ به rgb(10, 50, 40) */
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 2rem; /* فاصله از پایین پست‌ها */
+    margin-bottom: 2rem; /* فاصله از پایین صفحه */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Vazirmatn', 'Inter', sans-serif;
+}
+
+.load-more-button:hover {
+    background-color: rgb(0, 30, 20); /* تغییر رنگ به rgb(0, 30, 20) */
+    transform: translateY(-2px);
+}
+
+
+/* --- Media Queries برای واکنش‌گرایی --- */
+
+/* موبایل: ۱ ستون و فعال‌سازی منوی همبرگر */
+@media (max-width: 767px) {
+    .header {
+        flex-direction: row; /* هدر به صورت افقی می‌ماند تا عنوان وسط باشد و دکمه‌ها در گوشه‌ها */
+        justify-content: space-between; /* توزیع فضا بین عناصر */
+        align-items: center;
+        padding: 1rem 1.5rem; /* پدینگ برای فاصله از کناره‌ها */
+        position: relative; /* مهم: برای absolute positioning فرزندانش */
+    }
+
+    .site-title {
+        order: initial; /* بازگشت به ترتیب عادی */
+        margin: 0 auto; /* برای وسط‌چین کردن عنوان */
+        font-size: 2rem;
+    }
+
+    .hamburger-icon {
+        display: block; /* نمایش همبرگر در موبایل */
+    }
+
+    /* منوها (nav-left و social-icons) در موبایل به صورت کشویی زیر هدر */
+    .nav-left, .social-icons {
+        display: flex; /* همیشه flex برای انیمیشن */
+        position: absolute; /* زیر هدر قرار می‌گیرند */
+        top: 100%; /* دقیقا زیر خط پایان هدر */
+        left: 0; /* از سمت چپ هدر شروع شود */
+        width: 100%; /* تمام عرض فضای موجود زیر هدر */
+        background-color: rgb(10, 50, 40); /* تغییر رنگ به rgb(10, 50, 40) */
+        color: #fff;
+        z-index: 998;
+        flex-direction: column; /* آیتم‌ها ستونی می‌شوند */
+        justify-content: flex-start; /* از بالا شروع به چیدن کند */
+        align-items: center; /* وسط‌چین افقی آیتم‌ها */
+        padding: 1rem 0; /* پدینگ داخلی منو */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+        /* حالت اولیه: مخفی و خارج از دید */
+        max-height: 0; /* برای انیمیشن ارتفاع */
+        opacity: 0;
+        overflow: hidden; /* مخفی کردن محتوای سرریز */
+        visibility: hidden; /* مخفی کامل برای عدم تداخل با تاچ */
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out, visibility 0.3s;
+        box-sizing: border-box;
+    }
+
+    /* وضعیت فعال (منو باز شده) */
+    .nav-left.menu-active, .social-icons.menu-active {
+        max-height: 500px; /* یک ارتفاع کافی برای نمایش همه آیتم‌ها. باید از ارتفاع واقعی محتوا بیشتر باشد. */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* آیتم‌های منوی ناوبری */
+    .nav-left ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        width: 100%; /* ul تمام عرض منو را بگیرد */
+        text-align: center;
+    }
+    .nav-left ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-left ul li a {
+        display: block; /* لینک تمام عرض را پر کند تا چند سطری نشود */
+        padding: 0.75rem 0;
+        font-size: 1.5rem; /* فونت بزرگتر برای منو موبایل */
+        white-space: nowrap; /* جلوگیری از شکستن متن */
+        overflow: hidden; /* مخفی کردن سرریز در صورت nowrap */
+        text-overflow: ellipsis; /* اضافه کردن ... در صورت سرریز */
+    }
+
+    /* آیتم‌های منوی شبکه‌های اجتماعی (عمودی و وسط چین) */
+    .social-icons a {
+        font-size: 2rem;
+        margin: 0.5rem 0; /* فاصله عمودی بین آیکون‌ها */
+    }
+    .social-icons.menu-active {
+        gap: 1rem; /* فاصله کلی بین آیتم‌ها در منوی اجتماعی فعال */
+    }
+
+    .posts-grid {
+        padding: 0 1rem;
+    }
+
+    /* ** تغییرات اصلی برای full-post-container در موبایل ** */
+    .full-post-container {
+        /* حفظ پدینگ بالا و پایین */
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        /* اضافه کردن پدینگ افقی به خود باکس پست برای فاصله از کناره‌های صفحه */
+        padding-left: 1rem; /* یا 2% از عرض صفحه */
+        padding-right: 1rem; /* یا 2% از عرض صفحه */
+        /* یا می‌توانید از margin-inline استفاده کنید: margin-inline: 1rem; */
+    }
+
+    /* پدینگ داخلی پاراگراف‌ها را برای موبایل کاهش می‌دهیم */
+    .full-post-excerpt,
+    .full-post-container p {
+        padding-left: 0.75rem; /* کمی کمتر از پدینگ کانتینر برای زیبایی */
+        padding-right: 0.75rem;
+    }
+}
+
+/* تبلت: ۲ ستون و منوهای عادی (چپ، وسط، راست) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        padding: 1.5rem 1rem;
+        justify-content: space-between; /* توزیع فضا بین عناصر: منو چپ، عنوان وسط، منو راست */
+    }
+
+    .site-title {
+        order: 2; /* عنوان در مرکز قرار گیرد */
+        margin: 0; /* اطمینان از عدم تداخل margin auto */
+    }
+    
+    /* wrapperها را به عنوان flex item مستقیم در هدر قرار می‌دهیم و order را روی آن‌ها اعمال می‌کنیم */
+    .menu-left-wrapper {
+        order: 3; /* منوی ساده در RTL در سمت چپ قرار می‌گیرد */
+        display: flex; /* برای نمایش nav-left در تبلت/دسکتاپ */
+        align-items: center;
+    }
+    .nav-left { /* nav-left خودش داخل wrapper هست، پس style را به آن اعمال می‌کنیم */
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        position: static; /* اطمینان از حذف absolute positioning موبایل */
+    }
+
+    .menu-right-wrapper {
+        order: 1; /* منوی شبکه‌های اجتماعی در RTL در سمت راست قرار می‌گیرد */
+        display: flex; /* برای نمایش social-icons در تبلت/دسکتاپ */
+        align-items: center;
+    }
+    .social-icons { /* social-icons خودش داخل wrapper هست */
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        position: static; /* اطمینان از حذف absolute positioning موبایل */
+    }
+
+
+    .hamburger-icon {
+        display: none; /* مخفی کردن همبرگر در تبلت */
+    }
+
+    /* نمایش منوهای عادی در تبلت (اطمینان از نمایش) */
+    .nav-left ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .nav-left ul li a, .social-icons a {
+        font-size: inherit;
+        padding: 0;
+        display: inline-block;
+        white-space: nowrap; /* جلوگیری از شکستن متن */
+    }
+    .social-icons a {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+
+    .posts-grid {
+        padding: 0 1.5rem;
+    }
+
+    .post-card {
+        width: calc(50% - 0.75rem); /* عرض برای ۲ ستون تبلت */
+    }
+
+    /* ** تغییرات اصلی برای full-post-container در تبلت ** */
+    .full-post-container {
+        /* حفظ پدینگ بالا و پایین */
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        /* اضافه کردن پدینگ افقی به خود باکس پست برای فاصله از کناره‌های صفحه */
+        padding-left: 1.5rem; /* یا 2% از عرض صفحه */
+        padding-right: 1.5rem; /* یا 2% از عرض صفحه */
+        /* یا می‌توانید از margin-inline استفاده کنید: margin-inline: 1.5rem; */
+    }
+
+    /* پدینگ داخلی پاراگراف‌ها را برای تبلت تنظیم می‌کنیم */
+    .full-post-excerpt,
+    .full-post-container p {
+        padding-left: 1rem; /* کمی کمتر از پدینگ کانتینر برای زیبایی */
+        padding-right: 1rem;
+    }
+}
+
+/* لپ‌تاپ: ۳ ستون و منوهای عادی (چپ، وسط، راست) */
+@media (min-width: 1024px) {
+    .header {
+        padding: 1.5rem 1rem;
+        justify-content: space-between; /* توزیع فضا بین عناصر: منو چپ، عنوان وسط، منو راست */
+    }
+
+    .site-title {
+        order: 2; /* عنوان در مرکز قرار گیرد */
+        margin: 0; /* اطمینان از عدم تداخل margin auto */
+    }
+
+    /* wrapperها را به عنوان flex item مستقیم در هدر قرار می‌دهیم و order را روی آن‌ها اعمال می‌کنیم */
+    .menu-left-wrapper {
+        order: 3; /* منوی ساده در RTL در سمت چپ قرار می‌گیرد */
+        display: flex; /* برای نمایش nav-left در دسکتاپ */
+        align-items: center;
+    }
+    .nav-left { /* nav-left خودش داخل wrapper هست */
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        position: static; /* اطمینان از حذف absolute positioning موبایل */
+    }
+
+    .menu-right-wrapper {
+        order: 1; /* منوی شبکه‌های اجتماعی در RTL در سمت راست قرار می‌گیرد */
+        display: flex; /* برای نمایش social-icons در دسکتاپ */
+        align-items: center;
+    }
+    .social-icons { /* social-icons خودش داخل wrapper هست */
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        position: static; /* اطمینان از حذف absolute positioning موبایل */
+    }
+
+
+    .hamburger-icon {
+        display: none; /* مخفی کردن همبرگر در لپ‌تاپ */
+    }
+
+    /* نمایش منوهای عادی در لپ‌تاپ (اطمینان از نمایش) */
+    .nav-left ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .nav-left ul li a {
+        font-size: inherit;
+        padding: 0;
+        display: inline-block;
+        white-space: nowrap; /* جلوگیری از شکستن متن */
+    }
+    .social-icons a {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .posts-grid {
+        margin: 0 10%;
+    }
+
+    .container {
+        padding: 2rem 0;
+    }
+
+    /* پدینگ داخلی پاراگراف‌ها را برای لپ‌تاپ تنظیم می‌کنیم */
+    .full-post-excerpt,
+    .full-post-container p {
+        padding-left: 2rem; /* افزایش پدینگ برای دسکتاپ */
+        padding-right: 2rem; /* افزایش پدینگ برای دسکتاپ */
+    }
+}

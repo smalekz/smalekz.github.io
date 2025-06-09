@@ -205,12 +205,15 @@ body {
 
 /* استایل برای تصویر در صفحه کامل پست */
 .full-post-image {
-    display: block; /* برای اینکه margin auto کار کند */
+    display: block;
     max-width: 100%;
-    height: auto;
-    margin: 2rem auto; /* مرکز قرار گرفتن تصویر و فاصله از بالا و پایین */
-    border-radius: 0.5rem; /* گوشه‌های گرد برای تصویر */
+    width: 90%;
+    height: 250px;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    background-color: rgb(10,30,20);
 }
 
 /* استایل برای خلاصه و تمام پاراگراف‌های داخل full-post-container */

@@ -101,7 +101,7 @@ body {
 
 /* استایل کانتینر اصلی محتوا */
 .container {
-    padding: 2rem 1rem; /* پدینگ برای کانتینر */
+    padding: 4rem 1rem 2rem; /* افزایش پدینگ بالا به 4rem برای فاصله از هدر */
     max-width: 1200px; /* حداکثر عرض برای دسکتاپ */
     margin: 0 auto; /* مرکز قرار گرفتن کانتینر */
     display: flex; /* برای قرار دادن دکمه بارگذاری در پایین */
@@ -113,7 +113,7 @@ body {
 .posts-grid {
     position: relative; /* برای موقعیت‌دهی مطلق کارت‌ها */
     padding: 0;
-    margin: 0 10%; /* ۲۰ درصد فاصله از راست و چپ برای حالت لپ‌تاپ (پیش‌فرض) */
+    margin: 0; /* حذف مارجین ۱۰٪ برای جلوگیری از مشکل چپ چسبیدن */
     min-height: 500px; /* یک ارتفاع اولیه برای جلوگیری از فروپاشی در لود اولیه */
     /* display: grid و سایر ویژگی‌های grid حذف شدند تا Masonry JS کار کند */
     width: 100%; /* برای اینکه Masonry JS بتواند عرض را محاسبه کند */
@@ -189,17 +189,17 @@ body {
     max-width: 900px;
     margin: 2rem auto;
     /* پدینگ کلی: بالا و پایین 2rem، چپ و راست 2.5rem برای فاصله از دیواره‌های کانتینر */
-    padding: 2rem 2.5rem;
+    padding: 0.1% 2% !important;
     background-color: #ffffff;
     border-radius: 0.75rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: stretch;
 }
 
 .full-post-title {
     font-size: 2.5rem;
     color: #333333;
-    margin-top: 0; /* اطمینان از حذف margin-top پیش‌فرض مرورگر */
-    margin-bottom: 1.5rem; /* فاصله‌ی مناسب بعد از عنوان */
+    margin: 3%;
     /* این عنوان در داخل .full-post-container قرار دارد و پدینگ 2.5rem را از آن به ارث می‌برد */
 }
 
@@ -362,94 +362,8 @@ body {
     }
 }
 
-/* تبلت: ۲ ستون و منوهای عادی (چپ، وسط، راست) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .header {
-        padding: 1.5rem 1rem;
-        justify-content: space-between; /* توزیع فضا بین عناصر: منو چپ، عنوان وسط، منو راست */
-    }
-
-    .site-title {
-        order: 2; /* عنوان در مرکز قرار گیرد */
-        margin: 0; /* اطمینان از عدم تداخل margin auto */
-    }
-    
-    /* wrapperها را به عنوان flex item مستقیم در هدر قرار می‌دهیم و order را روی آن‌ها اعمال می‌کنیم */
-    .menu-left-wrapper {
-        order: 3; /* منوی ساده در RTL در سمت چپ قرار می‌گیرد */
-        display: flex; /* برای نمایش nav-left در تبلت/دسکتاپ */
-        align-items: center;
-    }
-    .nav-left { /* nav-left خودش داخل wrapper هست، پس style را به آن اعمال می‌کنیم */
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        position: static; /* اطمینان از حذف absolute positioning موبایل */
-    }
-
-    .menu-right-wrapper {
-        order: 1; /* منوی شبکه‌های اجتماعی در RTL در سمت راست قرار می‌گیرد */
-        display: flex; /* برای نمایش social-icons در تبلت/دسکتاپ */
-        align-items: center;
-    }
-    .social-icons { /* social-icons خودش داخل wrapper هست */
-        display: flex;
-        flex-direction: row;
-        gap: 1.5rem;
-        position: static; /* اطمینان از حذف absolute positioning موبایل */
-    }
-
-
-    .hamburger-icon {
-        display: none; /* مخفی کردن همبرگر در تبلت */
-    }
-
-    /* نمایش منوهای عادی در تبلت (اطمینان از نمایش) */
-    .nav-left ul {
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-    .nav-left ul li a, .social-icons a {
-        font-size: inherit;
-        padding: 0;
-        display: inline-block;
-        white-space: nowrap; /* جلوگیری از شکستن متن */
-    }
-    .social-icons a {
-        font-size: 1.8rem;
-        margin: 0;
-    }
-
-
-    .posts-grid {
-        padding: 0 1.5rem;
-    }
-
-    .post-card {
-        width: calc(50% - 0.75rem); /* عرض برای ۲ ستون تبلت */
-    }
-
-    /* ** تغییرات اصلی برای full-post-container در تبلت ** */
-    .full-post-container {
-        /* حفظ پدینگ بالا و پایین */
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        /* اضافه کردن پدینگ افقی به خود باکس پست برای فاصله از کناره‌های صفحه */
-        padding-left: 1.5rem; /* یا 2% از عرض صفحه */
-        padding-right: 1.5rem; /* یا 2% از عرض صفحه */
-        /* یا می‌توانید از margin-inline استفاده کنید: margin-inline: 1.5rem; */
-    }
-
-    /* پدینگ داخلی پاراگراف‌ها را برای تبلت تنظیم می‌کنیم */
-    .full-post-excerpt,
-    .full-post-container p {
-        padding-left: 1rem; /* کمی کمتر از پدینگ کانتینر برای زیبایی */
-        padding-right: 1rem;
-    }
-}
-
-/* لپ‌تاپ: ۳ ستون و منوهای عادی (چپ، وسط، راست) */
-@media (min-width: 1024px) {
+/* لپ‌تاپ و بزرگتر: ۳ ستون و منوهای عادی (چپ، وسط، راست) */
+@media (min-width: 768px) {
     .header {
         padding: 1.5rem 1rem;
         justify-content: space-between; /* توزیع فضا بین عناصر: منو چپ، عنوان وسط، منو راست */
@@ -471,6 +385,9 @@ body {
         flex-direction: row;
         gap: 1.5rem;
         position: static; /* اطمینان از حذف absolute positioning موبایل */
+        max-height: unset; /* Remove max-height set for mobile */
+        opacity: 1; /* Ensure full opacity */
+        visibility: visible; /* Ensure visible */
     }
 
     .menu-right-wrapper {
@@ -483,6 +400,9 @@ body {
         flex-direction: row;
         gap: 1.5rem;
         position: static; /* اطمینان از حذف absolute positioning موبایل */
+        max-height: unset; /* Remove max-height set for mobile */
+        opacity: 1; /* Ensure full opacity */
+        visibility: visible; /* Ensure visible */
     }
 
 
@@ -507,17 +427,21 @@ body {
     }
 
     .posts-grid {
-        margin: 0 10%;
+        margin: 0; /* حذف مارجین ۱۰٪ برای جلوگیری از مشکل چپ چسبیدن */
+        padding: 0; /* اضافه کردن پدینگ برای فاصله از کناره‌های کانتینر */
     }
 
     .container {
-        padding: 2rem 0;
+        padding: 2%; /* پدینگ بالا را افزایش دادیم و چپ و راست را از posts-grid می‌گیریم */
     }
 
     /* پدینگ داخلی پاراگراف‌ها را برای لپ‌تاپ تنظیم می‌کنیم */
     .full-post-excerpt,
     .full-post-container p {
-        padding-left: 2rem; /* افزایش پدینگ برای دسکتاپ */
-        padding-right: 2rem; /* افزایش پدینگ برای دسکتاپ */
+        padding: 0 0%;
+    }
+
+    .post-card {
+        width: calc(33.333% - 16px); /* Adjusted width for 3 columns on larger screens (approx 1rem gap) */
     }
 }

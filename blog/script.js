@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // افزودن event listener به کل کارت پست برای ناوبری به صفحه کامل پست
         article.addEventListener('click', () => {
-            window.location.href = postUrl;
+            window.open(postUrl, '_blank');
         });
 
         return article;

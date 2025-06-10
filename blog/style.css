@@ -3,7 +3,8 @@ body {
     font-family: 'Vazirmatn', 'Inter', sans-serif; /* استفاده از فونت Vazirmatn، سپس Inter و در نهایت sans-serif */
     margin: 0;
     padding: 0;
-    background-color: rgb(10, 30, 20); /* تغییر رنگ پس‌زمینه به rgb(10, 30, 20) */
+    background: url(../assets/images/bp.webp), rgb(10, 30, 20);
+    background-blend-mode: overlay; /* تغییر رنگ پس‌زمینه به rgb(10, 30, 20) */
     direction: rtl; /* جهت‌دهی راست به چپ برای زبان فارسی */
     text-align: right; /* تراز متن به راست */
     /* اضافه کردن box-sizing برای همه عناصر برای اطمینان از محاسبات درست عرض و پدینگ */
@@ -168,14 +169,14 @@ body {
 }
 
 .post-title {
-    font-size: 1.4rem; /* فونت کوچکتر برای عنوان */
+    font-size: 1.3rem; /* فونت کوچکتر برای عنوان */
     font-weight: 700;
     color: #111;
     margin: 0; /* margin از طریق post-header-content مدیریت می‌شود */
 }
 
 .post-excerpt {
-    font-size: 0.95rem; /* فونت کوچکتر برای توضیحات */
+    font-size: 0.9rem; /* فونت کوچکتر برای توضیحات */
     color: #222;
     line-height: 1.6;
     margin-top: 0;
@@ -197,9 +198,13 @@ body {
 }
 
 .full-post-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: #333333;
     margin: 3%;
+    background-color: yellow;
+    border-radius: 20px;
+    place-self: center;
+    padding: 0 1%;
     /* این عنوان در داخل .full-post-container قرار دارد و پدینگ 2.5rem را از آن به ارث می‌برد */
 }
 
@@ -214,6 +219,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: contain;
     background-color: rgb(10,30,20);
+    border: 5px solid #a00;
+    box-shadow: 0px 0px 10px 0px black;
 }
 
 /* استایل برای خلاصه و تمام پاراگراف‌های داخل full-post-container */
@@ -233,7 +240,7 @@ body {
 
 /* استایل دکمه بارگذاری بیشتر */
 .load-more-button {
-    background-color: rgb(10, 50, 40); /* تغییر رنگ به rgb(10, 50, 40) */
+    background-color: rgb(10, 40, 30); /* تغییر رنگ به rgb(10, 50, 40) */
     color: #ffffff;
     padding: 0.75rem 2rem;
     border: none;
@@ -365,7 +372,7 @@ body {
 /* لپ‌تاپ و بزرگتر: ۳ ستون و منوهای عادی (چپ، وسط، راست) */
 @media (min-width: 768px) {
     .header {
-        padding: 1.5rem 1rem;
+        padding: 1rem 2rem;
         justify-content: space-between; /* توزیع فضا بین عناصر: منو چپ، عنوان وسط، منو راست */
     }
 
@@ -424,6 +431,7 @@ body {
     .social-icons a {
         font-size: 1.8rem;
         margin: 0;
+        padding-top: 1rem;
     }
 
     .posts-grid {

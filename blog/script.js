@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         'posts/post1.html',
         'posts/post2.html',
         'posts/post3.html', // Reusing for example posts to show varied heights
-        'posts/post2.html', // Reusing for example posts
+        'posts/post4.html', // Reusing for example posts
         'posts/post1.html',
         'posts/post2.html',
         'posts/post1.html',

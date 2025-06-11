@@ -255,3 +255,77 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     console.log("Mobile menu toggle logic attached.");
 });
+
+function h1 (){
+    document.write(`    
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>وبلاگ</title>
+            <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="/blog/style.css">
+        
+            <script type="text/javascript" >
+                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+                ym(98515727, "init", {
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    ecommerce:"dataLayer"
+                });
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/98515727" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-4X6CSC6XN9"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+        
+                gtag('config', 'G-4X6CSC6XN9');
+            </script>
+        
+        </head>
+        
+        `);
+}
+
+function h2 (){
+    document.write(`
+
+        <header class="header">
+            <div class="menu-left-wrapper">
+                <button class="hamburger-icon nav-hamburger-toggle" id="navLeftHamburger" aria-label="Toggle navigation menu">☰</button>
+                <nav class="nav-left" id="navLeftMenu">
+                    <ul>
+                        <li><a href="../" class="active-menu-item">وبلاگ</a></li>
+                        <li><a href="/ctfa.html">درباره ما</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="site-title">وبلاگ</h1>
+            <div class="menu-right-wrapper">
+                <button class="hamburger-icon social-hamburger-toggle" id="socialHamburger" aria-label="Toggle social links">...</button>
+                <div class="social-icons" id="socialMenu">
+                    <a href="https://wa.me/message/UKIMKRK2KHXNP1" target="_blank" aria-label="واتس اپ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+                          </svg>
+                      </a>
+                      <a href="tel:+989142232172" target="_blank" aria-label="واتس اپ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"></path>
+                          </svg>
+                      </a>
+                </div>
+            </div>
+        </header>
+    
+    `);
+}

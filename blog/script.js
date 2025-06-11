@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const allPostFiles = [
         'posts/post1.html',
         'posts/post2.html',
-        'posts/post1.html', // Reusing for example posts to show varied heights
+        'posts/post3.html', // Reusing for example posts to show varied heights
         'posts/post2.html', // Reusing for example posts
         'posts/post1.html',
         'posts/post2.html',
@@ -258,11 +258,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function h1 (){
     document.write(`    
-
-        <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>وبلاگ</title>
             <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="/blog/style.css">
         
@@ -290,8 +287,8 @@ function h1 (){
         
                 gtag('config', 'G-4X6CSC6XN9');
             </script>
-        
-        </head>
+            <title></title>
+            <link rel="icon" type="image/x-icon" href="data:image/webp;base64,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">
         
         `);
 }

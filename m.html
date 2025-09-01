@@ -1,288 +1,387 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>سامانه قرعه کشی مسابقات استان آذربایجان شرقی</title>
-<!-- فونت وزیرمتن از گوگل -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#0f172a;
-  --panel:rgba(255,255,255,0.03);
-  --muted:#9ca3af;
-  --text:#e5e7eb;
-  --border:#1f2937;
-  --chip:#0b1225;
-  --btn-bg:#263b6b;
-  --btn-shadow:#16244a;
-}
-*{box-sizing:border-box;font-family:"Vazirmatn",sans-serif;}
-body{
-  margin:0;background:linear-gradient(180deg,#0b1023,var(--bg));
-  color:var(--text);min-height:100vh;
-  display:flex;align-items:flex-start;justify-content:center;
-  padding:32px 16px;
-}
-.app{width:100%;max-width:1100px;}
-h1{font-size:22px;margin:0 0 8px;font-weight:800}
-.subtitle{color:var(--muted);margin-bottom:20px}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>سامانه قرعه کشی مسابقات استان آذربایجان شرقی</title>
+  <!-- فونت وزیرمتن از Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;
+      --panel:rgba(255,255,255,0.03);
+      --muted:#9ca3af;
+      --text:#e5e7eb;
+      --border:#1f2937;
+      --chip:#0b1225;
+      --btn-bg:#263b6b;
+      --btn-shadow:#16244a;
+    }
+    *{box-sizing:border-box;font-family:"Vazirmatn",sans-serif;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#0b1023,var(--bg));
+      color:var(--text);
+      min-height:100vh;
+      display:flex;align-items:flex-start;justify-content:center;
+      padding:32px 16px;
+    }
+    .app{width:100%;max-width:1100px;}
+    h1{font-size:22px;margin:0 0 8px;font-weight:800}
+    .subtitle{color:var(--muted);margin-bottom:20px}
 
-.grid{display:grid;gap:16px;grid-template-columns:1.2fr 1fr;}
-@media(max-width:900px){.grid{grid-template-columns:1fr}}
+    .grid{display:grid;gap:16px;grid-template-columns:1.2fr 1fr;}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}}
 
-.card{
-  background:var(--panel);border:1px solid var(--border);
-  border-radius:12px;padding:16px;backdrop-filter:blur(6px);
-  box-shadow:0 10px 30px rgba(0,0,0,.2);
-}
-.card h2{font-size:16px;margin:0 0 12px;color:#cbd5e1}
+    .card{
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:16px;
+      backdrop-filter:blur(6px);
+      box-shadow:0 10px 30px rgba(0,0,0,.2);
+    }
+    .card h2{font-size:16px;margin:0 0 12px;color:#cbd5e1}
 
-label{font-size:13px;color:#cbd5e1}
-input,textarea{
-  background:#0c1224;border:1px solid var(--border);
-  color:var(--text);padding:8px 10px;border-radius:8px;outline:none;
-}
-textarea{min-height:150px;resize:vertical;width:100%}
+    label{font-size:13px;color:#cbd5e1}
+    input,textarea{
+      background:#0c1224;
+      border:1px solid var(--border);
+      color:var(--text);
+      padding:8px 10px;
+      border-radius:8px;
+      outline:none;
+    }
+    textarea{min-height:150px;resize:vertical;width:100%}
 
-/* وزن و تعداد در یک ردیف */
-.inline-row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-bottom:12px}
-.inline-row>div{display:flex;flex-direction:column;gap:4px;flex:1}
+    /* وزن و تعداد در یک ردیف */
+    .inline-row{
+      display:flex;gap:10px;flex-wrap:wrap;
+      align-items:flex-end;margin-bottom:12px;
+    }
+    .inline-row>div{
+      display:flex;flex-direction:column;gap:4px;flex:1;
+    }
 
-.chips{display:flex;gap:8px;flex-wrap:wrap}
-.chip{
-  background:var(--chip);border:1px solid var(--border);
-  color:#cbd5e1;padding:6px 12px;border-radius:999px;cursor:pointer;
-  transition:.15s transform ease,.15s background ease;
-}
-.chip[data-selected="true"]{background:#0e1a36;border-color:#26407a;color:#e2e8f0}
-.chip:hover{transform:translateY(-1px)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{
+      background:var(--chip);
+      border:1px solid var(--border);
+      color:#cbd5e1;
+      padding:6px 12px;
+      border-radius:999px;
+      cursor:pointer;
+      transition:.15s transform ease,.15s background ease;
+    }
+    .chip[data-selected="true"]{
+      background:#0e1a36;
+      border-color:#26407a;
+      color:#e2e8f0;
+    }
+    .chip:hover{transform:translateY(-1px)}
 
-.btn{
-  border:none;background:var(--btn-bg);color:#fff;border-radius:8px;
-  padding:10px 16px;cursor:pointer;font-weight:800;
-  box-shadow:0 3px 0 var(--btn-shadow),0 8px 16px rgba(0,0,0,.25);
-  transition:transform .15s ease,box-shadow .15s ease, filter .15s ease;
-}
-.btn:hover{filter:brightness(1.05)}
-.btn:active{transform:translateY(3px);box-shadow:none}
-.btn:disabled{opacity:.6;cursor:not-allowed}
+    .btn{
+      border:none;
+      background:var(--btn-bg);
+      color:#fff;
+      border-radius:8px;
+      padding:10px 16px;
+      cursor:pointer;
+      font-weight:800;
+      box-shadow:0 3px 0 var(--btn-shadow),0 8px 16px rgba(0,0,0,.25);
+      transition:transform .15s ease,box-shadow .15s ease, filter .15s ease;
+    }
+    .btn:hover{filter:brightness(1.05)}
+    .btn:active{transform:translateY(3px);box-shadow:none}
+    .btn:disabled{opacity:.6;cursor:not-allowed}
 
-.table{width:100%;border-collapse:collapse;margin-top:12px}
-.table th,.table td{
-  border:1px solid var(--border);padding:8px;text-align:right;background:rgba(0,0,0,0.12);
-}
-.table th{background:rgba(255,255,255,0.05);font-weight:800;color:#cbd5e1}
+    .table{width:100%;border-collapse:collapse;margin-top:12px}
+    .table th,.table td{
+      border:1px solid var(--border);
+      padding:8px;
+      text-align:right;
+      background:rgba(0,0,0,0.12);
+    }
+    .table th{
+      background:rgba(255,255,255,0.05);
+      font-weight:800;
+      color:#cbd5e1;
+    }
 
-.badge{
-  display:inline-block;padding:4px 8px;border-radius:999px;
-  border:1px solid var(--border);background:#0d182f;color:#cbd5e1;font-size:12px
-}
-.muted{color:var(--muted);font-size:13px}
+    .badge{
+      display:inline-block;
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#0d182f;
+      color:#cbd5e1;
+      font-size:12px;
+    }
+    .muted{color:var(--muted);font-size:13px}
 
-.error{color:#fecaca;background:#2a0f14;border:1px solid #491319;padding:8px;border-radius:8px;font-size:13px;margin-top:8px}
-.success{color:#d1fae5;background:#0f2a18;border:1px solid #174b2b;padding:8px;border-radius:8px;font-size:13px;margin-top:8px}
-</style>
+    .error{
+      color:#fecaca;
+      background:#2a0f14;
+      border:1px solid #491319;
+      padding:8px;border-radius:8px;
+      font-size:13px;margin-top:8px;
+    }
+    .success{
+      color:#d1fae5;
+      background:#0f2a18;
+      border:1px solid #174b2b;
+      padding:8px;border-radius:8px;
+      font-size:13px;margin-top:8px;
+    }
+  </style>
 </head>
 <body>
-<div class="app">
-  <h1>سامانه قرعه کشی مسابقات استان آذربایجان شرقی</h1>
-  <div class="subtitle">تعیین تصادفی حریفان مسابقه در اوزان و تعداد بازیکنان مختلف (هیأت انجمن‌های ورزش‌های رزمی استان آذربایجان شرقی)</div>
+  <div class="app">
+    <h1>سامانه قرعه کشی مسابقات استان آذربایجان شرقی</h1>
+    <div class="subtitle">تعیین تصادفی حریفان مسابقه در اوزان و تعداد بازیکنان مختلف (هیأت انجمن‌های ورزش‌های رزمی استان آذربایجان شرقی)</div>
 
-  <div class="grid">
-    <!-- ستون تنظیمات -->
-    <div class="card">
-      <h2>تنظیمات</h2>
-
-      <div class="inline-row">
-        <div>
-          <label for="customWeight">وزن (مثال: 35- یا +90)</label>
-          <input id="customWeight" type="text" placeholder="مثلاً 35- یا +90" />
-        </div>
-        <div>
-          <label>تعداد شرکت‌کنندگان</label>
-          <div class="chips" id="countChips">
-            <div class="chip" data-value="4">۴</div>
-            <div class="chip" data-value="8" data-selected="true">۸</div>
-            <div class="chip" data-value="16">۱۶</div>
-            <div class="chip" data-value="32">۳۲</div>
+    <div class="grid">
+      <!-- ستون تنظیمات -->
+      <div class="card">
+        <h2>تنظیمات</h2>
+        <div class="inline-row">
+          <div>
+            <label for="customWeight">وزن (مثال: 35- یا +90)</label>
+            <input id="customWeight" type="text" placeholder="مثلاً ۳۵- یا +۹۰" />
+          </div>
+          <div>
+            <label>تعداد شرکت‌کنندگان</label>
+            <div class="chips" id="countChips">
+              <div class="chip" data-value="4">۴</div>
+              <div class="chip" data-value="8" data-selected="true">۸</div>
+              <div class="chip" data-value="16">۱۶</div>
+              <div class="chip" data-value="32">۳۲</div>
+            </div>
           </div>
         </div>
+
+        <label for="names">نام ورزشکاران (هر خط یک نام)</label>
+        <textarea id="names" placeholder="مثال:
+حسین م — تبریز
+امیر ر — مراغه"></textarea>
+
+        <div style="margin-top:6px">
+          <input type="checkbox" id="autoFill" checked />
+          <label for="autoFill" class="muted">کمبود اسامی را با نام‌های پیش‌فرض پر کن</label>
+          &nbsp;&nbsp;
+          <input type="checkbox" id="dedupe" checked />
+          <label for="dedupe" class="muted">حذف نام‌های تکراری</label>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="btn" id="drawBtn">قرعه‌کشی</button>
+          <button class="btn" id="reshuffleBtn" disabled>قرعه مجدد</button>
+          <button class="btn" id="clearBtn">پاک‌سازی</button>
+        </div>
+
+        <div id="msg"></div>
       </div>
 
-      <label for="names">نام ورزشکاران (هر خط یک نام)</label>
-      <textarea id="names" placeholder="مثلا علیرضا قوچی - تبریز
-مثلا صابر ملک زاده - جلفا
-"></textarea>
-
-      <div style="margin-top:6px">
-        <input type="checkbox" id="autoFill" checked />
-        <label for="autoFill" class="muted">کمبود اسامی را با نام‌های پیش‌فرض پر کن</label>
-        &nbsp;&nbsp;
-        <input type="checkbox" id="dedupe" checked />
-        <label for="dedupe" class="muted">حذف نام‌های تکراری</label>
+      <!-- ستون نتیجه -->
+      <div class="card">
+        <h2>نتیجه قرعه</h2>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+          <span class="badge" id="badgeWeight">وزن: -</span>
+          <span class="badge" id="badgeCount">تعداد: ۸ نفر</span>
+          <span class="muted" id="timestamp"></span>
+        </div>
+        <table class="table" aria-label="جدول مسابقات">
+          <thead>
+            <tr>
+              <th style="width:110px">مسابقه</th>
+              <th>ورزشکار اول</th>
+              <th>ورزشکار دوم</th>
+            </tr>
+          </thead>
+          <tbody id="matchesBody">
+            <tr><td colspan="3" class="muted">هنوز قرعه‌کشی نشده است.</td></tr>
+          </tbody>
+        </table>
       </div>
-
-      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
-        <button class="btn" id="drawBtn">قرعه‌کشی</button>
-        <button class="btn" id="reshuffleBtn" disabled>قرعه مجدد</button>
-        <button class="btn" id="clearBtn">پاک‌سازی</button>
-      </div>
-
-      <div id="msg"></div>
-    </div>
-
-    <!-- ستون نتیجه -->
-    <div class="card">
-      <h2>نتیجه قرعه</h2>
-
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
-        <span class="badge" id="badgeWeight">وزن: -</span>
-        <span class="badge" id="badgeCount">تعداد: 8 نفر</span>
-        <span class="muted" id="timestamp"></span>
-      </div>
-
-      <table class="table" aria-label="جدول مسابقات">
-        <thead>
-          <tr>
-            <th style="width:110px">مسابقه</th>
-            <th>ورزشکار اول</th>
-            <th>ورزشکار دوم</th>
-          </tr>
-        </thead>
-        <tbody id="matchesBody">
-          <tr><td colspan="3" class="muted">هنوز قرعه‌کشی نشده است.</td></tr>
-        </tbody>
-      </table>
     </div>
   </div>
-</div>
 
-<script>
-  // وضعیت
-  const state = { count: 8, weight: null, participants: null };
+  <script>
+    // وضعیت
+    const state = { count: 8, weight: null, participants: null };
 
-  // المان‌ها
-  const chips = document.getElementById('countChips');
-  const customWeight = document.getElementById('customWeight');
-  const namesArea = document.getElementById('names');
-  const autoFill = document.getElementById('autoFill');
-  const dedupe = document.getElementById('dedupe');
-  const drawBtn = document.getElementById('drawBtn');
-  const reshuffleBtn = document.getElementById('reshuffleBtn');
-  const clearBtn = document.getElementById('clearBtn');
-  const msg = document.getElementById('msg');
-  const badgeWeight = document.getElementById('badgeWeight');
-  const badgeCount = document.getElementById('badgeCount');
-  const matchesBody = document.getElementById('matchesBody');
-  const timestamp = document.getElementById('timestamp');
+    // المان‌ها
+    const chips = document.getElementById('countChips');
+    const customWeight = document.getElementById('customWeight');
+    const namesArea = document.getElementById('names');
+    const autoFill = document.getElementById('autoFill');
+    const dedupe = document.getElementById('dedupe');
+    const drawBtn = document.getElementById('drawBtn');
+    const reshuffleBtn = document.getElementById('reshuffleBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const msg = document.getElementById('msg');
+    const badgeWeight = document.getElementById('badgeWeight');
+    const badgeCount = document.getElementById('badgeCount');
+    const matchesBody = document.getElementById('matchesBody');
+    const timestamp = document.getElementById('timestamp');
 
-  // ابزارها
-  const sanitize = s => s.replace(/\s+/g,' ').trim();
-  const dedupeArr = arr => [...new Set(arr)];
-  const shuffle = arr => { for (let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]; } return arr; };
-  const escapeHtml = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
-  const nowStr = () => new Date().toLocaleString('fa-IR',{hour12:false});
-  const defaultName = (i, w) => `بازیکن ${i} (وزن ${w})`;
+    // ابزارهای داخلی
+    const sanitize = s => s.replace(/\s+/g,' ').trim();
+    const dedupeArr = arr => [...new Set(arr)];
+    const shuffle = arr => { 
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    };
+    const escapeHtml = s => String(s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;')
+      .replace(/'/g,'&#039;');
+    const nowStr = () => new Date().toLocaleString('fa-IR',{hour12:false});
+    const defaultName = (i, w) => `بازیکن ${i} (وزن ${w})`;
 
-  function showMsg(type, text){
-    msg.innerHTML = `<div class="${type}">${text}</div>`;
-    if(type === 'success') setTimeout(()=> msg.innerHTML='', 3000);
-  }
-  function updateBadges(){
-    badgeWeight.textContent = `وزن: ${state.weight ? state.weight : '-'}`;
-    badgeCount.textContent = `تعداد: ${state.count} نفر`;
-    timestamp.textContent = state.participants ? `زمان: ${nowStr()}` : '';
-  }
-  function selectChip(value){
-    [...chips.children].forEach(ch => ch.dataset.selected = (ch.dataset.value === String(value)));
-  }
+    function showMsg(type, text){
+      msg.innerHTML = `<div class="${type}">${text}</div>`;
+      if(type==='success') setTimeout(()=> msg.innerHTML='',3000);
+    }
+    function updateBadges(){
+      badgeWeight.textContent = `وزن: ${state.weight?state.weight:'-'}`;
+      badgeCount.textContent = `تعداد: ${state.count} نفر`;
+      timestamp.textContent = state.participants ? `زمان: ${nowStr()}` : '';
+    }
+    function selectChip(value){
+      [...chips.children].forEach(ch=>ch.dataset.selected=(ch.dataset.value===String(value)));
+    }
 
-  // انتخاب تعداد
-  chips.addEventListener('click', (e)=>{
-    const chip = e.target.closest('.chip');
-    if(!chip) return;
-    state.count = Number(chip.dataset.value);
+    // انتخاب تعداد
+    chips.addEventListener('click',e=>{
+      const chip = e.target.closest('.chip');
+      if(!chip) return;
+      state.count = Number(chip.dataset.value);
+      selectChip(state.count);
+      updateBadges();
+    });
+
+    // پاک‌سازی
+    clearBtn.addEventListener('click',()=>{
+      namesArea.value=''; customWeight.value='';
+      state.weight=null; state.participants=null;
+      matchesBody.innerHTML=`<tr><td colspan="3" class="muted">هنوز قرعه‌کشی نشده است.</td></tr>`;
+      reshuffleBtn.disabled=true; msg.innerHTML='';
+      timestamp.textContent=''; updateBadges();
+    });
+
+    // قرعه‌کشی
+    drawBtn.addEventListener('click',()=>{
+      const wRaw = sanitize(customWeight.value);
+      state.weight = wRaw||'-';
+
+      const raw = namesArea.value.split('\n').map(sanitize).filter(Boolean);
+      let list = dedupe.checked ? dedupeArr(raw) : raw.slice();
+
+      if(list.length < state.count){
+        if(autoFill.checked){
+          for(let i=list.length+1; i<=state.count; i++){
+            list.push(defaultName(i, state.weight));
+          }
+        } else {
+          showMsg('error',`تعداد اسامی (${list.length}) کمتر از ${state.count} است.`);
+          return;
+        }
+      }
+      if(list.length>state.count) list=list.slice(0,state.count);
+
+      shuffle(list);
+      state.participants=list.slice();
+      renderMatches(list);
+      reshuffleBtn.disabled=false;
+      showMsg('success','قرعه‌کشی انجام شد.');
+      updateBadges();
+    });
+
+    // قرعه مجدد
+    reshuffleBtn.addEventListener('click',()=>{
+      if(!state.participants) return;
+      const list = state.participants.slice();
+      shuffle(list);
+      renderMatches(list);
+      showMsg('success','قرعه مجدد شد.');
+      updateBadges();
+    });
+
+    // رندر جدول
+    function renderMatches(list){
+      const pairs = [];
+      for(let i=0;i<list.length;i+=2) pairs.push([list[i],list[i+1]]);
+      let html='';
+      pairs.forEach((p,idx)=>{
+        html+=`
+          <tr>
+            <td>مبارزه ${idx+1}</td>
+            <td>${escapeHtml(p[0]||'')}</td>
+            <td>${escapeHtml(p[1]||'')}</td>
+          </tr>
+        `;
+      });
+      matchesBody.innerHTML=html;
+      timestamp.textContent=nowStr();
+    }
+
+    // پیش‌فرض
     selectChip(state.count);
     updateBadges();
-  });
 
-  // پاک‌سازی
-  clearBtn.addEventListener('click', ()=>{
-    namesArea.value = '';
-    customWeight.value = '';
-    state.weight = null;
-    state.participants = null;
-    matchesBody.innerHTML = `<tr><td colspan="3" class="muted">هنوز قرعه‌کشی نشده است.</td></tr>`;
-    reshuffleBtn.disabled = true;
-    msg.innerHTML = '';
-    timestamp.textContent = '';
-    updateBadges();
-  });
-
-  // قرعه‌کشی (بدون بررسی فرمت وزن)
-  drawBtn.addEventListener('click', ()=>{
-    const wRaw = sanitize(customWeight.value);
-    state.weight = wRaw || '-';
-
-    const raw = namesArea.value.split('\n').map(sanitize).filter(Boolean);
-    let list = dedupe.checked ? dedupeArr(raw) : raw.slice();
-
-    if(list.length < state.count){
-      if(autoFill.checked){
-        for(let i=list.length+1; i<=state.count; i++){
-          list.push(defaultName(i, state.weight));
+    // —— تبدیل همه اعداد به فارسی ——
+    const FA_DIGITS=['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+    function toFaDigits(str){return String(str).replace(/\d/g,d=>FA_DIGITS[d]);}
+    const SKIP_TAGS=new Set(['SCRIPT','STYLE','CODE','PRE','KBD','SAMP','NOSCRIPT','TEXTAREA','INPUT']);
+    function shouldSkip(node){
+      let el=node.parentNode;
+      while(el){
+        if(el.nodeType===1){
+          if(SKIP_TAGS.has(el.nodeName))return true;
+          if(el.isContentEditable)return true;
+          if(el.hasAttribute('data-nopersian'))return true;
         }
-      } else {
-        showMsg('error', `تعداد اسامی (${list.length}) کمتر از ${state.count} است. اسامی بیشتری وارد کنید یا پر کردن خودکار را فعال کنید.`);
-        return;
+        el=el.parentNode;
+      }
+      return false;
+    }
+    function convertAllDigitsInPage(){
+      const tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+      const nodes=[];
+      while(tw.nextNode())nodes.push(tw.currentNode);
+      for(const n of nodes){
+        if(shouldSkip(n))continue;
+        if(/\d/.test(n.nodeValue))n.nodeValue=toFaDigits(n.nodeValue);
       }
     }
-    if(list.length > state.count){
-      list = list.slice(0, state.count);
-    }
-
-    shuffle(list);
-    state.participants = list.slice();
-    renderMatches(list);
-    reshuffleBtn.disabled = false;
-    showMsg('success', 'قرعه‌کشی انجام شد.');
-    updateBadges();
-  });
-
-  // قرعه مجدد
-  reshuffleBtn.addEventListener('click', ()=>{
-    if(!state.participants) return;
-    const list = state.participants.slice();
-    shuffle(list);
-    renderMatches(list);
-    showMsg('success', 'قرعه مجدد شد.');
-    updateBadges();
-  });
-
-  // رندر جدول مسابقات
-  function renderMatches(list){
-    const pairs = [];
-    for(let i=0; i<list.length; i+=2){ pairs.push([list[i], list[i+1]]); }
-    let html = '';
-    pairs.forEach((p, idx)=>{
-      html += `
-        <tr>
-          <td>مبارزه ${idx+1}</td>
-          <td>${escapeHtml(p[0] ?? '')}</td>
-          <td>${escapeHtml(p[1] ?? '')}</td>
-        </tr>
-      `;
-    });
-    matchesBody.innerHTML = html;
-    timestamp.textContent = nowStr();
-  }
-
-  // پیش‌فرض‌ها
-  selectChip(state.count);
-  updateBadges();
-</script>
+    document.addEventListener('DOMContentLoaded',convertAllDigitsInPage);
+    new MutationObserver(muts=>{
+      for(const m of muts){
+        if(m.type==='characterData'){
+          const n=m.target;
+          if(!shouldSkip(n)&&/\d/.test(n.nodeValue))n.nodeValue=toFaDigits(n.nodeValue);
+        } else if(m.type==='childList'){
+          for(const node of m.addedNodes){
+            if(node.nodeType===Node.TEXT_NODE){
+              if(!shouldSkip(node)&&/\d/.test(node.nodeValue))node.nodeValue=toFaDigits(node.nodeValue);
+            } else if(node.nodeType===Node.ELEMENT_NODE){
+              const tw2=document.createTreeWalker(node,NodeFilter.SHOW_TEXT);
+              const nds=[];
+              while(tw2.nextNode())nds.push(tw2.currentNode);
+              for(const n of nds){
+                if(!shouldSkip(n)&&/\d/.test(n.nodeValue))n.nodeValue=toFaDigits(n.nodeValue);
+              }
+            }
+          }
+        }
+      }
+    }).observe(document.documentElement,{childList:true,subtree:true,characterData:true});
+  </script>
 </body>
 </html>

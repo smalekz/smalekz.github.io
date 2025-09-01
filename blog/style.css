@@ -449,19 +449,18 @@ body {
 pre {
     font-size: 20px;
     border: 2px solid grey;
-    width: 100%;
     border-left: 12px solid green;
     border-radius: 5px;
     background-color: #eee;
     float: left;
+    width: 100%;
+    overflow: auto;
 }
 pre code {
     font-family: Consolas,"courier new";
     color: #333;
     padding: 2px;
-    font-size: 105%;
     background-color: #eee;
-    float: right;
+    float: left;
     text-align: left;
-    width: 100%;
   }

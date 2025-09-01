@@ -857,7 +857,7 @@ main {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 25px
+    margin-bottom: 0px
 }
 
 .fa .timeline-list {
@@ -1465,6 +1465,7 @@ textarea.form-input::-webkit-resizer {
 
     .testimonials-avatar-box img {
         width: 80px;
+        height: 80px;
         border-radius: 20px
     }
 

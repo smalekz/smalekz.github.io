@@ -533,7 +533,7 @@ main {
 .clients,
 .home-text p,
 .skills-item:not(:last-child) {
-    margin-bottom: 15px
+    margin-bottom: 1px
 }
 
 .contact-info :is(.contact-link, time, address) {
@@ -832,7 +832,7 @@ main {
     align-items: flex-start;
     gap: 15px;
     margin: 0 -15px;
-    padding: 25px;
+    padding: 5px 25px 25px 25px;
     overflow-x: auto;
     scroll-padding-inline: 25px
 }
@@ -857,7 +857,7 @@ main {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 0px
+    margin-bottom: 20px
 }
 
 .fa .timeline-list {
@@ -1352,7 +1352,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     .home-text img {
-        width: 200px !important
+        width: 150px !important
     }
 
     .avatar-box img {
@@ -1515,7 +1515,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     .clients-list {
-        gap: 50px;
+        gap: 40px;
         margin: 0 -30px;
         scroll-padding-inline: 45px
     }

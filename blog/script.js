@@ -70,7 +70,7 @@ function h2 (){
                 <nav class="nav-left" id="navLeftMenu">
                     <ul>
                         <li><a href="../" class="active-menu-item">وبلاگ</a></li>
-                        <li><a href="/ctfa.html">درباره ما</a></li>
+                        <li><a href="/ctfa.html">ارتباط</a></li>
                     </ul>
                 </nav>
             </div>

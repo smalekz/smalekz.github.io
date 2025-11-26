@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>تماس با ما | رزرو مشاوره</title>
+  <meta name="description" content="برای رزرو مشاوره ریاضی‌فیزیک و کامپیوتر با ما تماس بگیرید. پاسخ سریع و هماهنگی انعطاف‌پذیر.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark"></span><span class="logo-text">رشد دانش‌آموز</span></a>
+    </div>
+  </nav>
+
+  <main class="container" style="padding:30px 0 40px">
+    <section class="card">
+      <h3>راه‌های ارتباطی</h3>
+      <p class="note">فرم زیر را پر کنید؛ در کوتاه‌ترین زمان تماس می‌گیریم.</p>
+      <form id="lead-form" class="form">
+        <input class="input" name="parentName" placeholder="نام ولی" required>
+        <input class="input" name="phone" placeholder="شماره تماس" required>
+        <select class="input" name="track" required>
+          <option value="">رشته مورد نظر</option>
+          <option>ریاضی‌فیزیک</option>
+          <option>کامپیوتر</option>
+        </select>
+        <button class="btn btn-primary" type="submit">ارسال درخواست</button>
+        <div id="lead-msg" class="note"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© رشد دانش‌آموز</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

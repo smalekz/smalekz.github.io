@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: 
 
-Sitemap: https://smalekz.github.io/sitemap.xml
+Sitemap: ./sitemap.xml

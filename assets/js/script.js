@@ -1,7 +1,32 @@
 
 'use strict';
 
+window.addEventListener('DOMContentLoaded', function() {
 
+  document.querySelectorAll('img').forEach(img => img.loading = 'lazy');
+
+  // ========== ساخت لایت‌باکس ==========
+  if(!document.getElementById('lb')) {
+    document.body.insertAdjacentHTML('beforeend', `<div id="lb" onclick="this.style.display='none'" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:9999;justify-content:center;align-items:center"><img id="lbi" style="max-width:90%;max-height:90%;object-fit:contain"><b onclick="event.stopPropagation();document.getElementById('lb').style.display='none'" style="position:absolute;top:20px;right:30px;color:#fff;font-size:40px;cursor:pointer;font-family:Arial">&times;</b></div>`);
+    window.lb = document.getElementById('lb');
+    window.lbi = document.getElementById('lbi');
+}
+
+ // یک کد برای هر دو نوع لینک (متنی و تصویری)
+ document.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', e => {
+      let img = a.querySelector('img');
+      if(img && img.src) {
+          e.preventDefault();
+          lbi.src = img.src;
+          lb.style.display = 'flex';
+      } else if(a.getAttribute('db64')) {
+          e.preventDefault();
+          lbi.src = a.getAttribute('db64');
+          lb.style.display = 'flex';
+      }
+  });
+});
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -61,26 +86,26 @@ overlay.addEventListener("click", testimonialsModalFunc);
 ///////
 
 
-
 // page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+// const navigationLinks = document.querySelectorAll("[data-nav-link]");
+// const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+// // add event to all nav link
+// for (let i = 0; i < navigationLinks.length; i++) {
+//   navigationLinks[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
+//     for (let i = 0; i < pages.length; i++) {
+//       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+//         pages[i].classList.add("active");
+//         navigationLinks[i].classList.add("active");
+//         window.scrollTo(0, 0);
+//       } else {
+//         pages[i].classList.remove("active");
+//         navigationLinks[i].classList.remove("active");
+//       }
+//     }
 
-  });
-}
+//   });
+// }
 
+});
